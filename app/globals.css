@@ -119,11 +119,41 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
   body {
     @apply bg-background text-foreground;
-    }
+  }
   html {
     @apply font-sans;
-    }
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  html,
+  body {
+    background: white;
+  }
+}
+
+@layer utilities {
+  .paper-break-avoid {
+    break-inside: avoid;
+  }
+
+  .preview-page-guides {
+    background-image:
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent calc(297mm - 2px),
+        rgba(14, 116, 144, 0.45) calc(297mm - 2px),
+        rgba(14, 116, 144, 0.45) 297mm
+      );
+    background-size: 100% 297mm;
+  }
 }

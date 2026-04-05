@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google"
 
 import "./globals.css"
+import { ConvexClientProvider } from "@/components/convex-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils";
@@ -26,9 +27,11 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", spaceGrotesk.variable, geistHeading.variable)}
     >
       <body>
-        <ThemeProvider>
-          <TooltipProvider>{children}</TooltipProvider>
-        </ThemeProvider>
+        <ConvexClientProvider>
+          <ThemeProvider>
+            <TooltipProvider>{children}</TooltipProvider>
+          </ThemeProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   )

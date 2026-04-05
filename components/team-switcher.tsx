@@ -53,9 +53,9 @@ export function TeamSwitcher({
               <span className="truncate font-medium">{activeTeam.name}</span>
               <span className="truncate text-xs">{activeTeam.plan}</span>
             </div>
-            <RiArrowUpDownLine className="ml-auto" />
+            {/* <RiArrowUpDownLine className="ml-auto" /> */}
           </DropdownMenuTrigger>
-          <DropdownMenuContent
+          {/* <DropdownMenuContent
             className="min-w-56 rounded-lg"
             align="start"
             side={isMobile ? "bottom" : "right"}
@@ -90,7 +90,7 @@ export function TeamSwitcher({
                 </div>
               </DropdownMenuItem>
             </DropdownMenuGroup>
-          </DropdownMenuContent>
+          </DropdownMenuContent> */}
         </DropdownMenu>
       </SidebarMenuItem>
     </SidebarMenu>

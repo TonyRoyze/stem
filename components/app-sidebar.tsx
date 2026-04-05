@@ -1,19 +1,18 @@
 "use client"
 
 import * as React from "react"
+import { useQuery } from "convex/react"
 
+import { api } from "@/convex/_generated/api"
 import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
 import { TeamSwitcher } from "@/components/team-switcher"
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { RiGalleryLine, RiPulseLine, RiCommandLine, RiTerminalBoxLine, RiRobotLine, RiBookOpenLine, RiSettingsLine, RiCropLine, RiPieChartLine, RiMapLine } from "@remixicon/react"
+import { RiGalleryLine, RiPulseLine, RiCommandLine, RiQuillPenLine, RiFolderOpenLine, RiEyeLine } from "@remixicon/react"
 
 // This is sample data.
 const data = {
@@ -24,12 +23,12 @@ const data = {
   },
   teams: [
     {
-      name: "Acme Inc",
+      name: "STEM",
       logo: (
         <RiGalleryLine
         />
       ),
-      plan: "Enterprise",
+      plan: "Academy",
     },
     {
       name: "Acme Corp.",
@@ -49,145 +48,60 @@ const data = {
     },
   ],
   navMain: [
+    // {
+    //   title: "Paper Builder",
+    //   url: "/papers/new",
+    //   icon: (
+    //     <RiQuillPenLine
+    //     />
+    //   ),
+    //   isActive: true,
+    // },
     {
-      title: "Playground",
-      url: "#",
+      title: "Papers",
+      url: "/papers",
       icon: (
-        <RiTerminalBoxLine
-        />
-      ),
-      isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Models",
-      url: "#",
-      icon: (
-        <RiRobotLine
-        />
-      ),
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: (
-        <RiBookOpenLine
-        />
-      ),
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: (
-        <RiSettingsLine
-        />
-      ),
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  projects: [
-    {
-      name: "Design Engineering",
-      url: "#",
-      icon: (
-        <RiCropLine
+        <RiFolderOpenLine
         />
       ),
     },
-    {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: (
-        <RiPieChartLine
-        />
-      ),
-    },
-    {
-      name: "Travel",
-      url: "#",
-      icon: (
-        <RiMapLine
-        />
-      ),
-    },
+    // {
+    //   title: "Preview",
+    //   url: "/preview",
+    //   icon: (
+    //     <RiEyeLine
+    //     />
+    //   ),
+    // },
   ],
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const recentPapers = useQuery(api.papers.listRecentCreated)
+
+  const navItems = React.useMemo(() => {
+    return data.navMain.map((item) =>
+      item.title === "Papers"
+        ? {
+            ...item,
+            items:
+              recentPapers?.map((paper) => ({
+                title: paper.title,
+                url: `/papers/${paper.routeKey}`,
+              })) ?? [],
+          }
+        : item
+    )
+  }, [recentPapers])
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavMain items={navItems} />
       </SidebarContent>
-      <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   )
