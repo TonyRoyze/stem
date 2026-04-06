@@ -7,7 +7,7 @@ import { ExportPdfButton } from "@/components/paper-builder/export-pdf-button"
 import { PreviewDocument } from "@/components/paper-builder/preview-document"
 import { STORAGE_KEY, createDefaultPaper, type PaperDocument } from "@/lib/paper-builder"
 
-export default function PreviewPage() {
+function PreviewContent() {
   const searchParams = useSearchParams()
   const [paperDocument, setPaperDocument] = React.useState<PaperDocument | null>(null)
 
@@ -62,5 +62,13 @@ export default function PreviewPage() {
         <PreviewDocument document={paperDocument} className="relative z-10" />
       </div>
     </main>
+  )
+}
+
+export default function PreviewPage() {
+  return (
+    <React.Suspense fallback={null}>
+      <PreviewContent />
+    </React.Suspense>
   )
 }

@@ -5,7 +5,7 @@ import { AUTH_COOKIE_NAME, isValidAuthCookie } from "@/lib/auth"
 
 const PUBLIC_PATHS = new Set(["/login"])
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl
 
   if (PUBLIC_PATHS.has(pathname)) {
