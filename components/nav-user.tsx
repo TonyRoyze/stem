@@ -1,5 +1,7 @@
 "use client"
 
+import { useRouter } from "next/navigation"
+
 import {
   Avatar,
   AvatarFallback,
@@ -20,7 +22,20 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { RiArrowUpDownLine, RiSparklingLine, RiCheckboxCircleLine, RiBankCardLine, RiNotificationLine, RiLogoutBoxLine } from "@remixicon/react"
+import {
+  RiCheckboxCircleLine,
+  RiLogoutBoxLine,
+  RiSettingsLine,
+} from "@remixicon/react"
+
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((part) => part[0] ?? "")
+    .join("")
+    .slice(0, 2)
+    .toUpperCase()
+}
 
 export function NavUser({
   user,
@@ -32,6 +47,8 @@ export function NavUser({
   }
 }) {
   const { isMobile } = useSidebar()
+  const router = useRouter()
+
   return (
     <SidebarMenu>
       <SidebarMenuItem>
@@ -43,13 +60,13 @@ export function NavUser({
           >
             <Avatar>
               <AvatarImage src={user.avatar} alt={user.name} />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
             </Avatar>
             <div className="grid flex-1 text-left text-sm leading-tight">
               <span className="truncate font-medium">{user.name}</span>
               <span className="truncate text-xs">{user.email}</span>
             </div>
-            <RiArrowUpDownLine className="ml-auto size-4" />
+            <RiSettingsLine className="ml-auto size-4" />
           </DropdownMenuTrigger>
           <DropdownMenuContent
             className="min-w-56 rounded-lg"
@@ -62,7 +79,7 @@ export function NavUser({
                 <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
                   <Avatar>
                     <AvatarImage src={user.avatar} alt={user.name} />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
                   </Avatar>
                   <div className="grid flex-1 text-left text-sm leading-tight">
                     <span className="truncate font-medium">{user.name}</span>
@@ -73,34 +90,14 @@ export function NavUser({
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <RiSparklingLine
-                />
-                Upgrade to Pro
+              <DropdownMenuItem onClick={() => router.push("/profile")}>
+                <RiCheckboxCircleLine />
+                Profile
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <RiCheckboxCircleLine
-                />
-                Account
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <RiBankCardLine
-                />
-                Billing
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <RiNotificationLine
-                />
-                Notifications
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <RiLogoutBoxLine
-              />
+            <DropdownMenuItem onClick={() => router.push("/logout")}>
+              <RiLogoutBoxLine />
               Log out
             </DropdownMenuItem>
           </DropdownMenuContent>

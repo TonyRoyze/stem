@@ -35,7 +35,7 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Documents</SidebarGroupLabel>
+      <SidebarGroupLabel>Workspace</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) =>
           item.items?.length ? (

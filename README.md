@@ -1,21 +1,23 @@
-# Next.js template
+# STEM
 
-This is a Next.js template with shadcn/ui.
+## Auth
 
-## Adding components
+The app now uses email/password accounts stored in Convex.
 
-To add components to your app, run the following command:
+Set these values in `.env.local`:
 
 ```bash
-npx shadcn@latest add button
+AUTH_SECRET=a-long-random-secret
 ```
 
-This will place the ui components in the `components` directory.
+When the `users` table is empty, the login page switches into first-account setup mode.
 
-## Using components
+Passwords are stored as an HMAC hash derived from `AUTH_SECRET`, and each user gets a stable `internalId`.
 
-To use the components in your app, import them as follows:
+In local development only, `AUTH_SECRET` falls back to:
 
-```tsx
-import { Button } from "@/components/ui/button";
+```bash
+AUTH_SECRET=stem-dev-secret-change-me
 ```
+
+Routes under `/papers`, `/preview`, `/profile`, `/api/export-pdf`, and the `/` entrypoint are protected by the auth cookie.

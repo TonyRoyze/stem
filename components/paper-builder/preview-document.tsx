@@ -1,4 +1,4 @@
-import type { PaperDocument, QuestionBlock } from "@/lib/paper-builder"
+import type { BlockTable, PaperDocument, QuestionBlock } from "@/lib/paper-builder"
 import { cn } from "@/lib/utils"
 
 function AnswerLines({ count }: { count: number }) {
@@ -74,17 +74,41 @@ function Diagram({
   )
 }
 
-function AnswerTable({ rows }: { rows: string[] }) {
+function AnswerTable({
+  table,
+}: {
+  table: BlockTable | null | undefined
+}) {
+  if (!table) {
+    return null
+  }
+
   return (
     <div className="mt-4 overflow-hidden border border-slate-400">
       <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr>
+            {table.headers.map((header, index) => (
+              <th
+                key={`answer-header-${index}`}
+                className="border border-slate-400 px-3 py-2 text-left font-medium"
+              >
+                {header}
+              </th>
+            ))}
+          </tr>
+        </thead>
         <tbody>
-          {rows.map((row, index) => (
-            <tr key={`answer-${index}`}>
-              <td className="w-12 border border-slate-300 px-3 py-3 text-center font-medium">
-                {index + 1}
-              </td>
-              <td className="border border-slate-300 px-3 py-3">{row || "\u00A0"}</td>
+          {table.rows.map((row, rowIndex) => (
+            <tr key={`answer-${rowIndex}`}>
+              {row.map((cell, cellIndex) => (
+                <td
+                  key={`answer-${rowIndex}-${cellIndex}`}
+                  className="border border-slate-300 px-3 py-3"
+                >
+                  {cell || "\u00A0"}
+                </td>
+              ))}
             </tr>
           ))}
         </tbody>
@@ -128,21 +152,25 @@ function PreviewBlock({
       <SupportingTable block={block} />
 
       {block.type === "mcq" ? (
-        <div className="mt-4 space-y-3 pl-2">
-          {block.options.map((option, optionIndex) => (
-            <div key={`${block.id}-${optionIndex}`} className="flex items-start gap-3 text-sm text-slate-800">
-              <span className="mt-0.5 inline-flex size-4 items-center justify-center rounded-full border border-slate-700" />
-              <span>{option}</span>
-            </div>
-          ))}
-        </div>
+        (block.answerFormat ?? "lines") === "table" ? (
+          <AnswerTable table={block.answerTable} />
+        ) : (
+          <div className="mt-4 space-y-3 pl-2">
+            {block.options.map((option, optionIndex) => (
+              <div key={`${block.id}-${optionIndex}`} className="flex items-start gap-3 text-sm text-slate-800">
+                <span className="mt-0.5 inline-flex size-4 items-center justify-center rounded-full border border-slate-700" />
+                <span>{option}</span>
+              </div>
+            ))}
+          </div>
+        )
       ) : null}
 
       {block.type === "short-answer" ? (
         <div className="mt-3">
           <p className="text-sm italic text-slate-600">{block.placeholder}</p>
           {block.answerFormat === "table" ? (
-            <AnswerTable rows={block.tableAnswers ?? []} />
+            <AnswerTable table={block.answerTable} />
           ) : (
             <AnswerLines count={block.lines} />
           )}
@@ -153,7 +181,7 @@ function PreviewBlock({
         <div className="mt-3">
           <p className="text-sm italic text-slate-600">{block.guidance}</p>
           {block.answerFormat === "table" ? (
-            <AnswerTable rows={block.tableAnswers ?? []} />
+            <AnswerTable table={block.answerTable} />
           ) : (
             <AnswerLines count={block.lines} />
           )}

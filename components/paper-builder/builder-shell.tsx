@@ -266,15 +266,24 @@ function TableEditor({
 
 function AnswerTableEditor({
   format,
-  rows,
+  table,
   onFormatChange,
-  onRowsChange,
+  onTableChange,
 }: {
   format: AnswerFormat
-  rows: string[]
+  table: BlockTable | null | undefined
   onFormatChange: (format: AnswerFormat) => void
-  onRowsChange: (rows: string[]) => void
+  onTableChange: (table: BlockTable) => void
 }) {
+  const resolvedTable = table ?? {
+    headers: ["Part", "Answer"],
+    rows: [
+      ["1", ""],
+      ["2", ""],
+      ["3", ""],
+    ],
+  }
+
   return (
     <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
       <div className="flex items-center justify-between gap-3">
@@ -297,26 +306,93 @@ function AnswerTableEditor({
         </div>
       </div>
       {format === "table" ? (
-        <div className="mt-4 space-y-2">
-          {rows.map((row, index) => (
-            <Input
-              key={`answer-row-${index}`}
-              value={row}
-              onChange={(event) =>
-                onRowsChange(rows.map((current, currentIndex) => (currentIndex === index ? event.target.value : current)))
-              }
-              className="bg-white"
-              placeholder={`Answer row ${index + 1}`}
-            />
-          ))}
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => onRowsChange([...rows, `Answer ${rows.length + 1}`])}
+        <div className="mt-4 p-1 space-y-3 overflow-x-auto">
+          <div
+            className="grid min-w-[420px] gap-2"
+            style={{
+              gridTemplateColumns: `repeat(${resolvedTable.headers.length}, minmax(0, 1fr))`,
+            }}
           >
-            <RiAddLine className="size-4" />
-            Add answer row
-          </Button>
+            {resolvedTable.headers.map((header, headerIndex) => (
+              <Input
+                key={`answer-header-${headerIndex}`}
+                value={header}
+                onChange={(event) =>
+                  onTableChange({
+                    ...resolvedTable,
+                    headers: resolvedTable.headers.map((current, index) =>
+                      index === headerIndex ? event.target.value : current
+                    ),
+                  })
+                }
+                className="bg-white"
+                placeholder={`Header ${headerIndex + 1}`}
+              />
+            ))}
+          </div>
+          {resolvedTable.rows.map((row, rowIndex) => (
+            <div
+              key={`answer-row-${rowIndex}`}
+              className="grid min-w-[420px] gap-2"
+              style={{
+                gridTemplateColumns: `repeat(${resolvedTable.headers.length}, minmax(0, 1fr))`,
+              }}
+            >
+              {row.map((cell, columnIndex) => (
+                <Input
+                  key={`answer-cell-${rowIndex}-${columnIndex}`}
+                  value={cell}
+                  onChange={(event) =>
+                    onTableChange(
+                      updateTableCell(
+                        resolvedTable,
+                        rowIndex,
+                        columnIndex,
+                        event.target.value
+                      )
+                    )
+                  }
+                  className="bg-white"
+                  placeholder="Cell"
+                />
+              ))}
+            </div>
+          ))}
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() =>
+                onTableChange({
+                  ...resolvedTable,
+                  rows: [
+                    ...resolvedTable.rows,
+                    resolvedTable.headers.map(() => ""),
+                  ],
+                })
+              }
+            >
+              <RiAddLine className="size-4" />
+              Row
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() =>
+                onTableChange({
+                  ...resolvedTable,
+                  headers: [
+                    ...resolvedTable.headers,
+                    `Column ${resolvedTable.headers.length + 1}`,
+                  ],
+                  rows: resolvedTable.rows.map((row) => [...row, ""]),
+                })
+              }
+            >
+              <RiAddLine className="size-4" />
+              Column
+            </Button>
+          </div>
         </div>
       ) : null}
     </div>
@@ -480,37 +556,51 @@ function BuilderCard({
           onChange={(table) => onChange({ ...block, table } as QuestionBlock)}
         />
 
-        {block.type === "mcq" ? (
-          <div className="space-y-3">
-            {block.options.map((option, optionIndex) => (
-              <div
-                key={`${block.id}-${optionIndex}`}
-                className="flex items-center gap-3 rounded-2xl border border-slate-200 px-4 py-3"
+      {block.type === "mcq" ? (
+        <div className="space-y-4">
+          <AnswerTableEditor
+            format={block.answerFormat ?? "lines"}
+            table={block.answerTable}
+            onFormatChange={(answerFormat) =>
+              onChange({ ...block, answerFormat })
+            }
+            onTableChange={(answerTable) =>
+              onChange({ ...block, answerTable })
+            }
+          />
+          {(block.answerFormat ?? "lines") === "lines" ? (
+            <div className="space-y-3">
+              {block.options.map((option, optionIndex) => (
+                <div
+                  key={`${block.id}-${optionIndex}`}
+                  className="flex items-center gap-3 rounded-2xl border border-slate-200 px-4 py-3"
+                >
+                  <div className="size-4 rounded-full border border-slate-400" />
+                  <Input
+                    value={option}
+                    onChange={(event) => {
+                      const nextOptions = [...block.options]
+                      nextOptions[optionIndex] = event.target.value
+                      onChange({ ...block, options: nextOptions })
+                    }}
+                    className="border-0 px-0 shadow-none focus-visible:ring-0"
+                  />
+                </div>
+              ))}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() =>
+                  onChange({ ...block, options: [...block.options, "New option"] })
+                }
               >
-                <div className="size-4 rounded-full border border-slate-400" />
-                <Input
-                  value={option}
-                  onChange={(event) => {
-                    const nextOptions = [...block.options]
-                    nextOptions[optionIndex] = event.target.value
-                    onChange({ ...block, options: nextOptions })
-                  }}
-                  className="border-0 px-0 shadow-none focus-visible:ring-0"
-                />
-              </div>
-            ))}
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() =>
-                onChange({ ...block, options: [...block.options, "New option"] })
-              }
-            >
-              <RiAddLine className="size-4" />
-              Add option
-            </Button>
-          </div>
-        ) : null}
+                <RiAddLine className="size-4" />
+                Add option
+              </Button>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
 
         {block.type === "short-answer" ? (
           <div className="space-y-4">
@@ -540,16 +630,16 @@ function BuilderCard({
                 />
               </label>
             </div>
-            <AnswerTableEditor
-              format={block.answerFormat ?? "lines"}
-              rows={block.tableAnswers ?? []}
-              onFormatChange={(answerFormat) =>
-                onChange({ ...block, answerFormat })
-              }
-              onRowsChange={(tableAnswers) =>
-                onChange({ ...block, tableAnswers })
-              }
-            />
+          <AnswerTableEditor
+            format={block.answerFormat ?? "lines"}
+            table={block.answerTable}
+            onFormatChange={(answerFormat) =>
+              onChange({ ...block, answerFormat })
+            }
+            onTableChange={(answerTable) =>
+              onChange({ ...block, answerTable })
+            }
+          />
           </div>
         ) : null}
 
@@ -581,16 +671,16 @@ function BuilderCard({
                 />
               </label>
             </div>
-            <AnswerTableEditor
-              format={block.answerFormat ?? "lines"}
-              rows={block.tableAnswers ?? []}
-              onFormatChange={(answerFormat) =>
-                onChange({ ...block, answerFormat })
-              }
-              onRowsChange={(tableAnswers) =>
-                onChange({ ...block, tableAnswers })
-              }
-            />
+          <AnswerTableEditor
+            format={block.answerFormat ?? "lines"}
+            table={block.answerTable}
+            onFormatChange={(answerFormat) =>
+              onChange({ ...block, answerFormat })
+            }
+            onTableChange={(answerTable) =>
+              onChange({ ...block, answerTable })
+            }
+          />
           </div>
         ) : null}
       </CardContent>

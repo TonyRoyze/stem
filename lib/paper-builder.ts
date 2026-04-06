@@ -23,6 +23,8 @@ export type SectionBlock = BaseBlock & {
 export type McqBlock = BaseBlock & {
   type: "mcq"
   options: string[]
+  answerFormat?: "lines" | "table"
+  answerTable?: BlockTable | null
 }
 
 export type ShortAnswerBlock = BaseBlock & {
@@ -30,7 +32,7 @@ export type ShortAnswerBlock = BaseBlock & {
   placeholder: string
   lines: number
   answerFormat?: AnswerFormat
-  tableAnswers?: string[]
+  answerTable?: BlockTable | null
 }
 
 export type LongAnswerBlock = BaseBlock & {
@@ -38,7 +40,7 @@ export type LongAnswerBlock = BaseBlock & {
   guidance: string
   lines: number
   answerFormat?: AnswerFormat
-  tableAnswers?: string[]
+  answerTable?: BlockTable | null
 }
 
 export type QuestionBlock =
@@ -73,8 +75,15 @@ function createDefaultTable(): BlockTable {
   }
 }
 
-function createDefaultTableAnswers() {
-  return ["Answer 1", "Answer 2", "Answer 3"]
+function createDefaultAnswerTable() {
+  return {
+    headers: ["Part", "Answer"],
+    rows: [
+      ["1", ""],
+      ["2", ""],
+      ["3", ""],
+    ],
+  }
 }
 
 export function createBlock(type: QuestionBlockType): QuestionBlock {
@@ -97,6 +106,8 @@ export function createBlock(type: QuestionBlockType): QuestionBlock {
         diagramDataUrl: null,
         table: null,
         options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        answerFormat: "lines",
+        answerTable: createDefaultAnswerTable(),
       }
     case "short-answer":
       return {
@@ -109,7 +120,7 @@ export function createBlock(type: QuestionBlockType): QuestionBlock {
         placeholder: "Write a concise response.",
         lines: 3,
         answerFormat: "lines",
-        tableAnswers: createDefaultTableAnswers(),
+        answerTable: createDefaultAnswerTable(),
       }
     case "long-answer":
       return {
@@ -122,7 +133,7 @@ export function createBlock(type: QuestionBlockType): QuestionBlock {
         guidance: "Support your answer with clear reasoning and examples where relevant.",
         lines: 8,
         answerFormat: "lines",
-        tableAnswers: createDefaultTableAnswers(),
+        answerTable: createDefaultAnswerTable(),
       }
   }
 }
@@ -151,6 +162,8 @@ export function createDefaultPaper(): PaperDocument {
         diagramDataUrl: null,
         table: null,
         options: ["Condensation", "Evaporation", "Freezing", "Precipitation"],
+        answerFormat: "lines",
+        answerTable: createDefaultAnswerTable(),
       },
       {
         id: createId("short"),
@@ -162,7 +175,7 @@ export function createDefaultPaper(): PaperDocument {
         placeholder: "Write 2-3 sentences.",
         lines: 3,
         answerFormat: "lines",
-        tableAnswers: createDefaultTableAnswers(),
+        answerTable: createDefaultAnswerTable(),
       },
       {
         id: createId("long"),
@@ -175,7 +188,15 @@ export function createDefaultPaper(): PaperDocument {
           "Include evaporation, condensation, precipitation, and collection in your answer.",
         lines: 8,
         answerFormat: "table",
-        tableAnswers: ["Evaporation", "Condensation", "Precipitation", "Collection"],
+        answerTable: {
+          headers: ["Stage", "Explanation"],
+          rows: [
+            ["Evaporation", ""],
+            ["Condensation", ""],
+            ["Precipitation", ""],
+            ["Collection", ""],
+          ],
+        },
       },
     ],
   }
@@ -199,9 +220,14 @@ export function cloneBlock(block: QuestionBlock): QuestionBlock {
     ...block,
     id: createId(block.type),
     table: cloneTable(block.table),
-    ...(block.type === "mcq" ? { options: [...block.options] } : {}),
+    ...(block.type === "mcq"
+      ? {
+          options: [...block.options],
+          answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()),
+        }
+      : {}),
     ...(block.type === "short-answer" || block.type === "long-answer"
-      ? { tableAnswers: [...(block.tableAnswers ?? createDefaultTableAnswers())] }
+      ? { answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()) }
       : {}),
   } as QuestionBlock
 }
@@ -213,10 +239,16 @@ export function normalizeDocument(document: PaperDocument): PaperDocument {
       ...block,
       diagramDataUrl: block.diagramDataUrl ?? null,
       table: cloneTable(block.table),
+      ...(block.type === "mcq"
+        ? {
+            answerFormat: block.answerFormat ?? "lines",
+            answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()),
+          }
+        : {}),
       ...(block.type === "short-answer" || block.type === "long-answer"
         ? {
             answerFormat: block.answerFormat ?? "lines",
-            tableAnswers: [...(block.tableAnswers ?? createDefaultTableAnswers())],
+            answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()),
           }
         : {}),
     })),

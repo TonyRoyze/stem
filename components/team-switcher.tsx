@@ -1,15 +1,10 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 
 import {
   DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {
@@ -18,7 +13,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
-import { RiArrowUpDownLine, RiAddLine } from "@remixicon/react"
+
 
 export function TeamSwitcher({
   teams,
@@ -46,9 +41,10 @@ export function TeamSwitcher({
               />
             }
           >
-            <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
+            {/* <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
               {activeTeam.logo}
-            </div>
+            </div> */}
+            <Image src="/icon.svg" alt="logo" width={32} height={32} />
             <div className="grid flex-1 text-left text-sm leading-tight">
               <span className="truncate font-medium">{activeTeam.name}</span>
               <span className="truncate text-xs">{activeTeam.plan}</span>
