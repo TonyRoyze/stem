@@ -21,6 +21,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { useCurrentUser } from "@/hooks/use-current-user"
 
 function formatDate(timestamp: number) {
   return new Intl.DateTimeFormat("en-US", {
@@ -30,6 +31,11 @@ function formatDate(timestamp: number) {
 }
 
 export default function PapersPage() {
+  const user = useCurrentUser()
+  const papers = useQuery(
+    api.papers.list,
+    user ? { ownerInternalId: user.internalId } : "skip"
+  )
 
   return (
     <SidebarProvider>

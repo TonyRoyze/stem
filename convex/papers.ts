@@ -36,9 +36,16 @@ function buildRouteKey(paper: {
 }
 
 export const list = query({
+  args: {
+    ownerInternalId: v.string(),
+  },
+  handler: async (ctx, args) => {
     const papers = await ctx.db
       .query("papers")
+      .withIndex("by_owner", (q) => q.eq("ownerInternalId", args.ownerInternalId))
       .collect()
+
+    papers.sort((a, b) => b.updatedAt - a.updatedAt)
 
     return papers.map((paper) => ({
       _id: paper._id,
@@ -48,6 +55,7 @@ export const list = query({
       title: paper.title,
       subtitle: paper.subtitle,
       duration: paper.duration,
+      ownerInternalId: paper.ownerInternalId,
       createdAt: paper.createdAt,
       updatedAt: paper.updatedAt,
     }))
@@ -55,6 +63,14 @@ export const list = query({
 })
 
 export const listRecentCreated = query({
+  args: {
+    ownerInternalId: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const papers = await ctx.db
+      .query("papers")
+      .withIndex("by_owner", (q) => q.eq("ownerInternalId", args.ownerInternalId))
+      .collect()
 
     return papers
       .sort((a, b) => b.createdAt - a.createdAt)
@@ -100,6 +116,7 @@ export const getByRouteKey = query({
 export const upsert = mutation({
   args: {
     paperId: v.optional(v.id("papers")),
+    ownerInternalId: v.string(),
     title: v.string(),
     subtitle: v.string(),
     duration: v.string(),
@@ -115,10 +132,15 @@ export const upsert = mutation({
         throw new Error("Paper not found.")
       }
 
+      if (existing.ownerInternalId && existing.ownerInternalId !== args.ownerInternalId) {
+        throw new Error("You do not have permission to edit this paper.")
+      }
+
       const slug = existing.slug ?? (await createUniqueSlug(ctx, args.title))
 
       await ctx.db.patch(args.paperId, {
         slug,
+        ownerInternalId: args.ownerInternalId,
         title: args.title,
         subtitle: args.subtitle,
         duration: args.duration,
@@ -136,6 +158,7 @@ export const upsert = mutation({
 
     const paperId = await ctx.db.insert("papers", {
       slug,
+      ownerInternalId: args.ownerInternalId,
       title: args.title,
       subtitle: args.subtitle,
       duration: args.duration,

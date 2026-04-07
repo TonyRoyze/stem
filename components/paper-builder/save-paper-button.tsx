@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import type { Id } from "@/convex/_generated/dataModel"
 import { STORAGE_KEY, type PaperDocument, normalizeDocument } from "@/lib/paper-builder"
 import { api } from "@/convex/_generated/api"
+import { useCurrentUser } from "@/hooks/use-current-user"
 
 export function SavePaperButton({
   paperId,
@@ -17,6 +18,7 @@ export function SavePaperButton({
 }) {
   const router = useRouter()
   const savePaper = useMutation(api.papers.upsert)
+  const user = useCurrentUser()
   const [isPending, setIsPending] = React.useState(false)
 
   const handleSave = React.useCallback(() => {
@@ -36,8 +38,13 @@ export function SavePaperButton({
           ? normalizeDocument(JSON.parse(saved) as PaperDocument)
           : fallbackDocument
 
+        if (!user) {
+          throw new Error("You must be signed in to save a paper.")
+        }
+
         const result = await savePaper({
           paperId: paperId ?? undefined,
+          ownerInternalId: user.internalId,
           title: document.title,
           subtitle: document.subtitle,
           duration: document.duration,

@@ -19,6 +19,7 @@ export async function GET() {
 
   return NextResponse.json({
     user: {
+      internalId: user.internalId,
       name: user.displayName,
       email: user.email,
       avatar: "",

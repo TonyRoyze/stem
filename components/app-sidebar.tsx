@@ -14,6 +14,8 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import { RiGalleryLine, RiPulseLine, RiCommandLine, RiFolderOpenLine } from "@remixicon/react"
+import { useCurrentUser } from "@/hooks/use-current-user"
 
 // This is sample data.
 const data = {
@@ -56,6 +58,11 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const user = useCurrentUser()
+  const recentPapers = useQuery(
+    api.papers.listRecentCreated,
+    user ? { ownerInternalId: user.internalId } : "skip"
+  )
 
   const navItems = React.useMemo(() => {
     return data.navMain.map((item) =>
