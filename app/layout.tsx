@@ -4,6 +4,7 @@ import "./globals.css"
 import { ConvexClientProvider } from "@/components/convex-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
+import { CurrentUserProvider } from "@/hooks/use-current-user"
 import { cn } from "@/lib/utils";
 
 const geistHeading = Geist({subsets:['latin'],variable:'--font-heading'});
@@ -28,9 +29,11 @@ export default function RootLayout({
     >
       <body>
         <ConvexClientProvider>
-          <ThemeProvider>
-            <TooltipProvider>{children}</TooltipProvider>
-          </ThemeProvider>
+          <CurrentUserProvider>
+            <ThemeProvider>
+              <TooltipProvider>{children}</TooltipProvider>
+            </ThemeProvider>
+          </CurrentUserProvider>
         </ConvexClientProvider>
       </body>
     </html>

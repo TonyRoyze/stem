@@ -30,7 +30,6 @@ function formatDate(timestamp: number) {
 }
 
 export default function PapersPage() {
-  const papers = useQuery(api.papers.list)
 
   return (
     <SidebarProvider>

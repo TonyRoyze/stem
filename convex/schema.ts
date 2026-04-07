@@ -22,5 +22,4 @@ export default defineSchema({
     updatedAt: v.number(),
   })
     .index("by_updatedAt", ["updatedAt"])
-    .index("by_slug", ["slug"]),
 })

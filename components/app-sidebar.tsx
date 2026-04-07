@@ -14,7 +14,6 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { RiGalleryLine, RiPulseLine, RiCommandLine, RiFolderOpenLine, RiUserLine } from "@remixicon/react"
 
 // This is sample data.
 const data = {
@@ -45,15 +44,6 @@ const data = {
     },
   ],
   navMain: [
-    // {
-    //   title: "Paper Builder",
-    //   url: "/papers/new",
-    //   icon: (
-    //     <RiQuillPenLine
-    //     />
-    //   ),
-    //   isActive: true,
-    // },
     {
       title: "Papers",
       url: "/papers",
@@ -66,12 +56,6 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
-  const recentPapers = useQuery(api.papers.listRecentCreated)
-  const [user, setUser] = React.useState<{
-    name: string
-    email: string
-    avatar: string
-  } | null>(null)
 
   const navItems = React.useMemo(() => {
     return data.navMain.map((item) =>
@@ -87,39 +71,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         : item
     )
   }, [recentPapers])
-
-  React.useEffect(() => {
-    let isMounted = true
-
-    async function loadUser() {
-      try {
-        const response = await fetch("/api/me", { credentials: "include" })
-        if (!response.ok) {
-          return
-        }
-
-        const payload = (await response.json()) as {
-          user?: {
-            name: string
-            email: string
-            avatar: string
-          } | null
-        }
-
-        if (isMounted && payload.user) {
-          setUser(payload.user)
-        }
-      } catch {
-        // Leave the footer hidden if the lookup fails.
-      }
-    }
-
-    loadUser()
-
-    return () => {
-      isMounted = false
-    }
-  }, [])
 
   return (
     <Sidebar collapsible="icon" {...props}>

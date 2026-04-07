@@ -89,7 +89,7 @@ export async function updateCurrentUserProfile(args: {
 
 export async function requireCurrentUser() {
   const cookieStore = await cookies()
-  const session = await readAuthSession(cookieStore.get(AUTH_COOKIE_NAME)?.value)
+  const session = readAuthSession(cookieStore.get(AUTH_COOKIE_NAME)?.value)
 
   if (!session) {
     redirect("/login?next=/profile")

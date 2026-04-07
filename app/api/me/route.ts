@@ -6,7 +6,7 @@ import { getCurrentUser } from "@/lib/convex-server"
 
 export async function GET() {
   const cookieStore = await cookies()
-  const session = await readAuthSession(cookieStore.get(AUTH_COOKIE_NAME)?.value)
+  const session = readAuthSession(cookieStore.get(AUTH_COOKIE_NAME)?.value)
 
   if (!session) {
     return NextResponse.json({ user: null }, { status: 401 })

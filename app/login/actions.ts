@@ -48,7 +48,7 @@ export async function login(
   const cookieStore = await cookies()
   cookieStore.set(
     AUTH_COOKIE_NAME,
-    await createAuthCookieValue({ internalId: user.internalId }),
+    createAuthCookieValue({ internalId: user.internalId }),
     authCookieOptions
   )
 
@@ -86,7 +86,7 @@ export async function createAccount(
     const cookieStore = await cookies()
     cookieStore.set(
       AUTH_COOKIE_NAME,
-      await createAuthCookieValue({ internalId: user.internalId }),
+      createAuthCookieValue({ internalId: user.internalId }),
       authCookieOptions
     )
 

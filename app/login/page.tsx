@@ -14,7 +14,7 @@ export default async function LoginPage({
   const cookieStore = await cookies()
   const resolvedSearchParams = await searchParams
   const next = resolvedSearchParams.next
-  const session = await readAuthSession(cookieStore.get(AUTH_COOKIE_NAME)?.value)
+  const session = readAuthSession(cookieStore.get(AUTH_COOKIE_NAME)?.value)
 
   if (session) {
     const user = await getCurrentUser(session.internalId)

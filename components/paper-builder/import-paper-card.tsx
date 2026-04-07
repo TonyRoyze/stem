@@ -123,7 +123,6 @@ export function ImportPaperCard() {
           value={value}
           onChange={(event) => setValue(event.target.value)}
           className="min-h-56 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 font-mono text-sm text-slate-700 outline-none transition focus:border-emerald-500"
-          placeholder='Paste JSON here, for example: { "documentJson": "{...}" }'
         />
         <Button onClick={handleImport} disabled={isPending || !value.trim()}>
           {isPending ? (

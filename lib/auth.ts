@@ -6,86 +6,33 @@ export type AuthSession = {
   internalId: string
 }
 
-function getDevFallbackSecret() {
-  return process.env.NODE_ENV === "production"
-    ? ""
-    : "stem-dev-secret-change-me"
-}
-
-function getAuthSecret() {
-  return process.env.AUTH_SECRET ?? getDevFallbackSecret()
-}
-
 function toHex(buffer: ArrayBuffer) {
   return Array.from(new Uint8Array(buffer))
     .map((value) => value.toString(16).padStart(2, "0"))
     .join("")
 }
 
-async function createSignature(secret: string, value: string) {
-  const key = await crypto.subtle.importKey(
-    "raw",
-    encoder.encode(secret),
-    { name: "HMAC", hash: "SHA-256" },
-    false,
-    ["sign"]
-  )
-
-  const signature = await crypto.subtle.sign(
-    "HMAC",
-    key,
-    encoder.encode(value)
-  )
-
-  return toHex(signature)
-}
-
 export async function hashPassword(password: string) {
-  const secret = getAuthSecret()
-  if (!secret) {
-    throw new Error("AUTH_SECRET must be configured.")
-  }
-
-  return createSignature(secret, `password:${password}`)
+  const digest = await crypto.subtle.digest(
+    "SHA-256",
+    encoder.encode(password)
+  )
+  return toHex(digest)
 }
 
-export async function createAuthCookieValue(session: AuthSession) {
-  const secret = getAuthSecret()
-  if (!secret) {
-    throw new Error("AUTH_SECRET must be configured.")
-  }
-
-  return `${session.internalId}.${await createSignature(secret, session.internalId)}`
+export function createAuthCookieValue(session: AuthSession) {
+  return session.internalId
 }
 
-export async function readAuthSession(value?: string | null) {
-  if (!value) {
+export function readAuthSession(value?: string | null): AuthSession | null {
+  if (!value || !value.trim()) {
     return null
   }
-
-  const separatorIndex = value.indexOf(".")
-  if (separatorIndex <= 0) {
-    return null
-  }
-
-  const internalId = value.slice(0, separatorIndex)
-  const signature = value.slice(separatorIndex + 1)
-  const secret = getAuthSecret()
-
-  if (!secret || !internalId || !signature) {
-    return null
-  }
-
-  const expected = await createSignature(secret, internalId)
-  if (signature !== expected) {
-    return null
-  }
-
-  return { internalId }
+  return { internalId: value.trim() }
 }
 
-export async function isValidAuthCookie(value?: string | null) {
-  return (await readAuthSession(value)) !== null
+export function isValidAuthCookie(value?: string | null) {
+  return readAuthSession(value) !== null
 }
 
 export const authCookieOptions = {

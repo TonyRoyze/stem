@@ -36,12 +36,8 @@ function buildRouteKey(paper: {
 }
 
 export const list = query({
-  args: {},
-  handler: async (ctx) => {
     const papers = await ctx.db
       .query("papers")
-      .withIndex("by_updatedAt")
-      .order("desc")
       .collect()
 
     return papers.map((paper) => ({
@@ -59,9 +55,6 @@ export const list = query({
 })
 
 export const listRecentCreated = query({
-  args: {},
-  handler: async (ctx) => {
-    const papers = await ctx.db.query("papers").collect()
 
     return papers
       .sort((a, b) => b.createdAt - a.createdAt)
