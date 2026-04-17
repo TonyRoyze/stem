@@ -23,10 +23,10 @@ function getFilenameFromHeaders(response: Response) {
   const disposition = response.headers.get("Content-Disposition")
   const match = disposition?.match(/filename="(.+?)"/)
 
-  return match?.[1] ?? "exam-paper.pdf"
+  return match?.[1] ?? "exam-paper-marking-scheme.pdf"
 }
 
-export function ExportPdfButton({
+export function ExportMarkingSchemeButton({
   children,
   ...props
 }: React.ComponentProps<typeof Button>) {
@@ -44,7 +44,7 @@ export function ExportPdfButton({
         }
 
         const document = JSON.parse(saved) as PaperDocument
-        const response = await fetch("/api/export-pdf", {
+        const response = await fetch("/api/export-marking-scheme", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -53,17 +53,21 @@ export function ExportPdfButton({
         })
 
         if (!response.ok) {
-          const payload = (await response.json().catch(() => null)) as
-            | { error?: string }
-            | null
-          throw new Error(payload?.error ?? "Failed to export PDF")
+          const payload = (await response.json().catch(() => null)) as {
+            error?: string
+          } | null
+          throw new Error(
+            payload?.error ?? "Failed to export marking scheme PDF"
+          )
         }
 
         const blob = await response.blob()
         downloadBlob(blob, getFilenameFromHeaders(response))
       } catch (error) {
         const message =
-          error instanceof Error ? error.message : "Failed to export PDF"
+          error instanceof Error
+            ? error.message
+            : "Failed to export marking scheme PDF"
         window.alert(message)
       } finally {
         setIsPending(false)

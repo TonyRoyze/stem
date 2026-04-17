@@ -1,4 +1,20 @@
-export type QuestionBlockType = "section" | "mcq" | "short-answer" | "long-answer"
+export type Paper = {
+  _id: string
+  _creationTime: number
+  slug: string | null
+  routeKey: string
+  title: string
+  subtitle: string
+  duration: string
+  ownerInternalId: string
+  createdAt: number
+  updatedAt: number
+}
+export type QuestionBlockType =
+  | "section"
+  | "mcq"
+  | "short-answer"
+  | "big-question"
 export type AnswerFormat = "lines" | "table"
 
 export type BlockTable = {
@@ -13,6 +29,7 @@ export type BaseBlock = {
   points?: number
   diagramDataUrl?: string | null
   table?: BlockTable | null
+  parentId?: string
 }
 
 export type SectionBlock = BaseBlock & {
@@ -25,6 +42,8 @@ export type McqBlock = BaseBlock & {
   options: string[]
   answerFormat?: "lines" | "table"
   answerTable?: BlockTable | null
+  correctAnswer?: number
+  markingInstructions?: string
 }
 
 export type ShortAnswerBlock = BaseBlock & {
@@ -33,21 +52,21 @@ export type ShortAnswerBlock = BaseBlock & {
   lines: number
   answerFormat?: AnswerFormat
   answerTable?: BlockTable | null
+  markingInstructions?: string
+  answer?: string
 }
 
-export type LongAnswerBlock = BaseBlock & {
-  type: "long-answer"
-  guidance: string
-  lines: number
-  answerFormat?: AnswerFormat
-  answerTable?: BlockTable | null
+export type BigQuestionBlock = BaseBlock & {
+  type: "big-question"
+  description: string
+  markingInstructions?: string
 }
 
 export type QuestionBlock =
   | SectionBlock
   | McqBlock
   | ShortAnswerBlock
-  | LongAnswerBlock
+  | BigQuestionBlock
 
 export type PaperDocument = {
   title: string
@@ -57,8 +76,48 @@ export type PaperDocument = {
   blocks: QuestionBlock[]
 }
 
+export function toRoman(num: number): string {
+  const romanNumerals = [
+    "i",
+    "ii",
+    "iii",
+    "iv",
+    "v",
+    "vi",
+    "vii",
+    "viii",
+    "ix",
+    "x",
+    "xi",
+    "xii",
+    "xiii",
+    "xiv",
+    "xv",
+    "xvi",
+    "xvii",
+    "xviii",
+    "xix",
+    "xx",
+  ]
+  return romanNumerals[num - 1] ?? num.toString()
+}
+
+export function isSubQuestion(block: QuestionBlock): boolean {
+  return Boolean(block.parentId)
+}
+
+export function getSubQuestions(
+  blocks: QuestionBlock[],
+  parentId: string
+): QuestionBlock[] {
+  return blocks.filter((block) => block.parentId === parentId)
+}
+
 function createId(prefix: string) {
-  if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+  if (
+    typeof crypto !== "undefined" &&
+    typeof crypto.randomUUID === "function"
+  ) {
     return `${prefix}-${crypto.randomUUID()}`
   }
 
@@ -117,23 +176,20 @@ export function createBlock(type: QuestionBlockType): QuestionBlock {
         points: 3,
         diagramDataUrl: null,
         table: null,
-        placeholder: "Write a concise response.",
+        placeholder: "",
         lines: 3,
         answerFormat: "lines",
         answerTable: createDefaultAnswerTable(),
       }
-    case "long-answer":
+    case "big-question":
       return {
-        id: createId("long"),
+        id: createId("bigq"),
         type,
-        title: "Untitled long answer question",
-        points: 8,
+        title: "Untitled big question",
+        points: 20,
         diagramDataUrl: null,
         table: null,
-        guidance: "Support your answer with clear reasoning and examples where relevant.",
-        lines: 8,
-        answerFormat: "lines",
-        answerTable: createDefaultAnswerTable(),
+        description: "",
       }
   }
 }
@@ -178,25 +234,13 @@ export function createDefaultPaper(): PaperDocument {
         answerTable: createDefaultAnswerTable(),
       },
       {
-        id: createId("long"),
-        type: "long-answer",
-        title: "Describe the water cycle and explain how energy from the sun drives it.",
-        points: 8,
+        id: createId("bigq"),
+        type: "big-question",
+        title: "Understanding the Water Cycle",
+        points: 20,
         diagramDataUrl: null,
         table: null,
-        guidance:
-          "Include evaporation, condensation, precipitation, and collection in your answer.",
-        lines: 8,
-        answerFormat: "table",
-        answerTable: {
-          headers: ["Stage", "Explanation"],
-          rows: [
-            ["Evaporation", ""],
-            ["Condensation", ""],
-            ["Precipitation", ""],
-            ["Collection", ""],
-          ],
-        },
+        description: "Answer all sub-questions related to the water cycle.",
       },
     ],
   }
@@ -223,11 +267,17 @@ export function cloneBlock(block: QuestionBlock): QuestionBlock {
     ...(block.type === "mcq"
       ? {
           options: [...block.options],
-          answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()),
+          answerTable: cloneTable(
+            block.answerTable ?? createDefaultAnswerTable()
+          ),
         }
       : {}),
-    ...(block.type === "short-answer" || block.type === "long-answer"
-      ? { answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()) }
+    ...(block.type === "short-answer"
+      ? {
+          answerTable: cloneTable(
+            block.answerTable ?? createDefaultAnswerTable()
+          ),
+        }
       : {}),
   } as QuestionBlock
 }
@@ -235,22 +285,34 @@ export function cloneBlock(block: QuestionBlock): QuestionBlock {
 export function normalizeDocument(document: PaperDocument): PaperDocument {
   return {
     ...document,
-    blocks: document.blocks.map((block) => ({
-      ...block,
-      diagramDataUrl: block.diagramDataUrl ?? null,
-      table: cloneTable(block.table),
-      ...(block.type === "mcq"
-        ? {
-            answerFormat: block.answerFormat ?? "lines",
-            answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()),
-          }
-        : {}),
-      ...(block.type === "short-answer" || block.type === "long-answer"
-        ? {
-            answerFormat: block.answerFormat ?? "lines",
-            answerTable: cloneTable(block.answerTable ?? createDefaultAnswerTable()),
-          }
-        : {}),
-    })),
+    blocks: document.blocks.map((block) => {
+      if (block.type === "mcq") {
+        return {
+          ...block,
+          diagramDataUrl: block.diagramDataUrl ?? null,
+          table: cloneTable(block.table),
+          answerFormat: block.answerFormat ?? "lines",
+          answerTable: cloneTable(
+            block.answerTable ?? createDefaultAnswerTable()
+          ),
+        }
+      }
+      if (block.type === "short-answer") {
+        return {
+          ...block,
+          diagramDataUrl: block.diagramDataUrl ?? null,
+          table: cloneTable(block.table),
+          answerFormat: block.answerFormat ?? "lines",
+          answerTable: cloneTable(
+            block.answerTable ?? createDefaultAnswerTable()
+          ),
+        }
+      }
+      return {
+        ...block,
+        diagramDataUrl: block.diagramDataUrl ?? null,
+        table: cloneTable(block.table),
+      }
+    }),
   }
 }

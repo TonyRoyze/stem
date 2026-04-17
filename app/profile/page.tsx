@@ -1,7 +1,7 @@
 import { RiFingerprintLine, RiMailLine, RiUserLine } from "@remixicon/react"
 
 import { ProfileForm } from "@/app/profile/profile-form"
-import { AppSidebar } from "@/components/app-sidebar"
+import { AppSidebar } from "@/components/sidebar/app-sidebar"
 import {
   Breadcrumb,
   BreadcrumbItem,

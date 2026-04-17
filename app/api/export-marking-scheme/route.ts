@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-import { generatePaperPdf } from "@/lib/printer.service"
+import { generateMarkingSchemePdf } from "@/lib/printer.service"
 import type { PaperDocument } from "@/lib/paper-builder"
 
 export const runtime = "nodejs"
@@ -12,7 +12,7 @@ function createFilename(title: string) {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
 
-  return `${slug || "exam-paper"}.pdf`
+  return `${slug || "exam-paper"}-marking-scheme.pdf`
 }
 
 export async function POST(request: Request) {
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
         return { name, value: valueParts.join("=") }
       })
 
-    const pdf = await generatePaperPdf({
+    const pdf = await generateMarkingSchemePdf({
       document: body.document,
       baseUrl: new URL(request.url).origin,
       cookies,
@@ -57,7 +57,7 @@ export async function POST(request: Request) {
       }
     )
   } catch (error) {
-    console.error("Failed to export PDF", error)
+    console.error("Failed to export marking scheme PDF", error)
     const message =
       error instanceof Error ? error.message : "Failed to generate PDF."
 

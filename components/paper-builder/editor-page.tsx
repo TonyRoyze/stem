@@ -4,13 +4,20 @@ import * as React from "react"
 import { useQuery } from "convex/react"
 import Link from "next/link"
 import type { Id } from "@/convex/_generated/dataModel"
-import { RiFileDownloadLine, RiEyeLine } from "@remixicon/react"
+import {
+  RiFileDownloadLine,
+  RiEyeLine,
+  RiFileList3Line,
+} from "@remixicon/react"
 
 import { api } from "@/convex/_generated/api"
-import { AppSidebar } from "@/components/app-sidebar"
+import { AppSidebar } from "@/components/sidebar/app-sidebar"
 import { BuilderShell } from "@/components/paper-builder/builder-shell"
-import { ExportPdfButton } from "@/components/paper-builder/export-pdf-button"
+import { ExportQuestionPaperButton } from "@/components/paper-builder/buttons/export-question-paper-button"
+import { ExportMarkingSchemeButton } from "@/components/paper-builder/buttons/export-marking-scheme-button"
 import { SavePaperButton } from "@/components/paper-builder/save-paper-button"
+import { SaveStatusIndicator } from "@/components/paper-builder/buttons/save-status-indicator"
+import { useAutoSave } from "@/hooks/use-auto-save"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -72,11 +79,13 @@ export function EditorPage({
   const isLoadingPaper = Boolean(routeKey) && savedPaper === undefined
   const isMissingPaper = Boolean(routeKey) && savedPaper === null
 
+  const { status, lastSaved, performSave } = useAutoSave(paperId ?? null)
+
   return (
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center justify-between gap-3 border-b border-slate-200/80 bg-white/80 px-4 backdrop-blur transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+        <header className="sticky top-0 z-10 flex h-16 shrink-0 items-center justify-between gap-3 border-b border-slate-200/80 bg-white px-4 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
           <div className="flex min-w-0 items-center gap-2">
             <SidebarTrigger className="-ml-1" />
             <Separator
@@ -86,9 +95,7 @@ export function EditorPage({
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/papers">
-                    Papers
-                  </BreadcrumbLink>
+                  <BreadcrumbLink href="/papers">Papers</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
@@ -100,19 +107,39 @@ export function EditorPage({
             </Breadcrumb>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            <SaveStatusIndicator
+              status={status}
+              lastSaved={lastSaved}
+              onSaveNow={performSave}
+            />
             <SavePaperButton paperId={paperId ?? null} />
             <Button
               variant="outline"
-              onClick={() => window.open("/preview", "_blank", "noopener,noreferrer")}
+              onClick={() =>
+                window.open("/preview", "_blank", "noopener,noreferrer")
+              }
             >
               <RiEyeLine className="size-4" />
               Preview
             </Button>
-            <ExportPdfButton>
+            <Button
+              variant="outline"
+              onClick={() =>
+                window.open("/marking-scheme", "_blank", "noopener,noreferrer")
+              }
+            >
+              <RiFileList3Line className="size-4" />
+              Preview Marking Scheme
+            </Button>
+            <ExportQuestionPaperButton>
               <RiFileDownloadLine className="size-4" />
-              Export PDF
-            </ExportPdfButton>
+              Export Question Paper
+            </ExportQuestionPaperButton>
+            <ExportMarkingSchemeButton>
+              <RiFileDownloadLine className="size-4" />
+              Export Marking Scheme
+            </ExportMarkingSchemeButton>
           </div>
         </header>
 
@@ -121,10 +148,15 @@ export function EditorPage({
             <div className="p-6 text-sm text-slate-500">Loading paper...</div>
           ) : isMissingPaper ? (
             <div className="p-6 text-sm text-slate-500">
-              Paper not found. Open a saved paper from the papers page or start a new one.
+              Paper not found. Open a saved paper from the papers page or start
+              a new one.
             </div>
           ) : (
-            <BuilderShell key={builderKey} showHeaderActions={false} className="min-h-full" />
+            <BuilderShell
+              key={builderKey}
+              showHeaderActions={true}
+              className="min-h-full"
+            />
           )}
         </div>
       </SidebarInset>

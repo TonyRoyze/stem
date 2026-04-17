@@ -2,11 +2,12 @@
 
 import Link from "next/link"
 import { useQuery } from "convex/react"
-import { RiAddLine, RiFileList3Line } from "@remixicon/react"
+import { RiAddLine } from "@remixicon/react"
 
 import { api } from "@/convex/_generated/api"
-import { AppSidebar } from "@/components/app-sidebar"
-import { ImportPaperCard } from "@/components/paper-builder/import-paper-card"
+import { AppSidebar } from "@/components/sidebar/app-sidebar"
+import { ImportPaperCard } from "@/components/home-page/import-paper-card"
+import { PaperCard } from "@/components/home-page/paper-card"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,7 +15,6 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import {
   SidebarInset,
@@ -22,13 +22,6 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { useCurrentUser } from "@/hooks/use-current-user"
-
-function formatDate(timestamp: number) {
-  return new Intl.DateTimeFormat("en-US", {
-    dateStyle: "medium",
-    timeStyle: "short",
-  }).format(timestamp)
-}
 
 export default function PapersPage() {
   const user = useCurrentUser()
@@ -41,7 +34,7 @@ export default function PapersPage() {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center justify-between gap-3 border-b border-slate-200/80 bg-white/80 px-4 backdrop-blur transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+        <header className="sticky top-0 flex h-16 shrink-0 items-center justify-between gap-3 border-b border-slate-200/80 bg-white/80 px-4 backdrop-blur transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
           <div className="flex min-w-0 items-center gap-2">
             <SidebarTrigger className="-ml-1" />
             <Separator
@@ -73,27 +66,7 @@ export default function PapersPage() {
             </div>
           ) : (
             papers.map((paper) => (
-              <Link key={paper._id} href={`/papers/${paper.routeKey}`} className="block">
-                <Card className="rounded-[28px] border-slate-200 shadow-[0_18px_45px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-[0_24px_60px_rgba(16,185,129,0.12)]">
-                  <CardHeader>
-                    <CardTitle className="text-xl text-slate-950">
-                      {paper.title}
-                    </CardTitle>
-                    <div className="text-sm text-slate-500">
-                      {paper.subtitle || "No subtitle"}
-                    </div>
-                  </CardHeader>
-                  <CardContent className="relative space-y-4 pb-5">
-                    <div className="space-y-1 text-sm text-slate-600">
-                      <div>Duration: {paper.duration || "Not set"}</div>
-                      <div>Updated: {formatDate(paper.updatedAt)}</div>
-                    </div>
-                    <div className="absolute right-5 bottom-0 text-sm font-medium text-emerald-700">
-                      Open Paper
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
+              <PaperCard key={paper._id} paper={paper} />
             ))
           )}
         </div>

@@ -1,15 +1,28 @@
-import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google"
+import { Geist, Geist_Mono, Space_Grotesk, Work_Sans, Newsreader } from "next/font/google"
 
 import "./globals.css"
 import { ConvexClientProvider } from "@/components/convex-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { CurrentUserProvider } from "@/hooks/use-current-user"
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
-const geistHeading = Geist({subsets:['latin'],variable:'--font-heading'});
+const geistHeading = Geist({ subsets: ["latin"], variable: "--font-heading" })
 
-const spaceGrotesk = Space_Grotesk({subsets:['latin'],variable:'--font-sans'})
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+})
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
+})
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
@@ -25,7 +38,15 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", spaceGrotesk.variable, geistHeading.variable)}
+      className={cn(
+        "antialiased",
+        fontMono.variable,
+        "font-sans",
+        spaceGrotesk.variable,
+        geistHeading.variable,
+        workSans.variable,
+        newsreader.variable
+      )}
     >
       <body>
         <ConvexClientProvider>

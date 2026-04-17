@@ -8,27 +8,25 @@ function resolveBrowserExecutable() {
   const candidates = [
     process.env.PUPPETEER_EXECUTABLE_PATH,
     process.env.CHROME_PATH,
-    (() => {
-      try {
-        return puppeteer.executablePath()
-      } catch {
-        return undefined
-      }
-    })(),
-    "/Applications/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
-    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-    "/Applications/Chromium.app/Contents/MacOS/Chromium",
-  ].filter(Boolean) as string[]
+    puppeteer.executablePath(),
+    "/Applications/Helium.app/Contents/MacOS/Helium",
+  ].filter((candidate): candidate is string => Boolean(candidate))
 
-  return candidates.find((path) => existsSync(path))
+  const executablePath = candidates.find((candidate) => existsSync(candidate))
+
+  return executablePath
 }
 
-export async function generatePaperPdf({
+async function generatePdf({
   document,
   baseUrl,
+  cookies,
+  path,
 }: {
   document: PaperDocument
   baseUrl: string
+  cookies?: Array<{ name: string; value: string }>
+  path: string
 }) {
   const executablePath = resolveBrowserExecutable()
 
@@ -47,17 +45,36 @@ export async function generatePaperPdf({
   try {
     const page = await browser.newPage()
 
-    await page.goto(new URL("/preview", baseUrl).toString(), {
+    if (cookies && cookies.length > 0) {
+      await page.setCookie(
+        ...cookies.map((c) => ({
+          name: c.name,
+          value: c.value,
+          domain: new URL(baseUrl).hostname,
+          path: "/",
+        }))
+      )
+    }
+
+    await page.goto(new URL(path, baseUrl).toString(), {
       waitUntil: "networkidle0",
     })
 
-    await page.evaluate((payload) => {
-      window.localStorage.setItem(payload.storageKey, JSON.stringify(payload.document))
-    }, { storageKey: STORAGE_KEY, document })
+    await page.evaluate(
+      (payload) => {
+        window.localStorage.setItem(
+          payload.storageKey,
+          JSON.stringify(payload.document)
+        )
+      },
+      { storageKey: STORAGE_KEY, document }
+    )
 
     await page.reload({
       waitUntil: "networkidle0",
     })
+
+    await page.waitForSelector("article", { timeout: 10000 })
 
     return await page.pdf({
       format: "A4",
@@ -74,4 +91,28 @@ export async function generatePaperPdf({
   } finally {
     await browser.close()
   }
+}
+
+export async function generatePaperPdf({
+  document,
+  baseUrl,
+  cookies,
+}: {
+  document: PaperDocument
+  baseUrl: string
+  cookies?: Array<{ name: string; value: string }>
+}) {
+  return generatePdf({ document, baseUrl, cookies, path: "/preview" })
+}
+
+export async function generateMarkingSchemePdf({
+  document,
+  baseUrl,
+  cookies,
+}: {
+  document: PaperDocument
+  baseUrl: string
+  cookies?: Array<{ name: string; value: string }>
+}) {
+  return generatePdf({ document, baseUrl, cookies, path: "/marking-scheme" })
 }
