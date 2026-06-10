@@ -2,6 +2,13 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@font-face {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/cooper-black.woff") format("woff");
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -133,18 +140,25 @@
 @media print {
   @page {
     size: A4;
-    margin: 15mm;
+    margin: 1in;
   }
 
   html,
   body {
     background: white;
   }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }
 
 @layer utilities {
   .paper-break-avoid {
     break-inside: avoid;
+    page-break-inside: avoid;
+    display: block;
   }
 
   .preview-page-guides {
@@ -164,5 +178,10 @@
 
   .font-newsreader {
     font-family: var(--font-newsreader), "Newsreader", serif;
+  }
+
+  .preview-paper-footer {
+    font-family: "Cooper Black", "Cooper Std Black", Georgia, serif;
+    font-weight: 400;
   }
 }

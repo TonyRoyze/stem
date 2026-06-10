@@ -6,7 +6,7 @@ export function MarksTable({ document }: { document: PaperDocument }) {
 
   return (
     <div className="w-[38%] shrink-0">
-      <table className="w-full border-collapse border border-black text-xs">
+      <table className="w-full border-collapse border border-black text-[10pt]">
         <thead>
           <tr className="border-b border-black">
             <th className="border-r border-black px-2 py-2 font-semibold">

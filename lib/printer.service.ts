@@ -1,6 +1,9 @@
-import { existsSync } from "node:fs"
+import { existsSync, readFileSync } from "node:fs"
+import { join } from "node:path"
 
 import puppeteer from "puppeteer"
+import { PDFDocument } from "pdf-lib"
+import * as opentype from "opentype.js"
 
 import { STORAGE_KEY, type PaperDocument } from "@/lib/paper-builder"
 
@@ -15,6 +18,83 @@ function resolveBrowserExecutable() {
   const executablePath = candidates.find((candidate) => existsSync(candidate))
 
   return executablePath
+}
+
+function createHeaderTemplate(pageNumber: number) {
+  return `
+    <div style="width:100%; margin:0 1in; font-size:11px; color:#000; font-family:Calibri,Arial,sans-serif;">
+      <div style="text-align:center;">${pageNumber}</div>
+    </div>
+  `
+}
+
+let cooperBlackFooterImage: string | null = null
+
+function getCooperBlackFooterImage() {
+  if (!cooperBlackFooterImage) {
+    const fontPath = join(process.cwd(), "public/fonts/cooper-black.woff")
+    const fontBuffer = readFileSync(fontPath)
+    const font = opentype.parse(
+      fontBuffer.buffer.slice(
+        fontBuffer.byteOffset,
+        fontBuffer.byteOffset + fontBuffer.byteLength
+      )
+    )
+    const path = font.getPath("Royal Institute International School", 0, 20, 16)
+    const box = path.getBoundingBox()
+    const padding = 2
+    const viewBox = [
+      box.x1 - padding,
+      box.y1 - padding,
+      box.x2 - box.x1 + padding * 2,
+      box.y2 - box.y1 + padding * 2,
+    ].join(" ")
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}">
+        <path fill="#000" d="${path.toPathData(2)}"/>
+      </svg>
+    `
+
+    cooperBlackFooterImage = `data:image/svg+xml;base64,${Buffer.from(
+      svg
+    ).toString("base64")}`
+  }
+
+  return cooperBlackFooterImage
+}
+
+function createFooterTemplate(showFooter: boolean) {
+  if (!showFooter) {
+    return "<div></div>"
+  }
+
+  const footerImage = getCooperBlackFooterImage()
+
+  return `
+    <div style="width:100%; margin:0 1in; font-size:10px; color:#000;">
+      <div style="border-top:1px solid #000; padding-top:5px; text-align:center;">
+        <img src="${footerImage}" alt="Royal Institute International School" style="display:inline-block; width:245px; height:auto;" />
+      </div>
+    </div>
+  `
+}
+
+async function mergePdfPages(pdfs: Uint8Array[]) {
+  const mergedPdf = await PDFDocument.create()
+
+  for (const pdfBytes of pdfs) {
+    const sourcePdf = await PDFDocument.load(pdfBytes)
+    const pages = await mergedPdf.copyPages(
+      sourcePdf,
+      sourcePdf.getPageIndices()
+    )
+
+    for (const page of pages) {
+      mergedPdf.addPage(page)
+    }
+  }
+
+  return mergedPdf.save()
 }
 
 async function generatePdf({
@@ -76,18 +156,45 @@ async function generatePdf({
 
     await page.waitForSelector("article", { timeout: 10000 })
 
-    return await page.pdf({
+    const pdfOptions = {
       format: "A4",
       printBackground: true,
       preferCSSPageSize: true,
-      displayHeaderFooter: false,
+      displayHeaderFooter: true,
       margin: {
-        top: "15mm",
-        right: "15mm",
-        bottom: "15mm",
-        left: "15mm",
+        top: "1in",
+        right: "1in",
+        bottom: "1in",
+        left: "1in",
       },
+      timeout: 0,
+    } satisfies Parameters<typeof page.pdf>[0]
+
+    const countPdf = await page.pdf({
+      ...pdfOptions,
+      headerTemplate: createHeaderTemplate(1),
+      footerTemplate: "<div></div>",
     })
+    const pageCount = (await PDFDocument.load(countPdf)).getPageCount()
+
+    if (pageCount <= 1) {
+      return countPdf
+    }
+
+    const pages: Uint8Array[] = []
+
+    for (let pageNumber = 1; pageNumber <= pageCount; pageNumber += 1) {
+      pages.push(
+        await page.pdf({
+          ...pdfOptions,
+          pageRanges: String(pageNumber),
+          headerTemplate: createHeaderTemplate(pageNumber),
+          footerTemplate: createFooterTemplate(pageNumber > 1),
+        })
+      )
+    }
+
+    return await mergePdfPages(pages)
   } finally {
     await browser.close()
   }

@@ -36,7 +36,7 @@ function MarkingSchemePreview({ document }: { document: PaperDocument }) {
     <article className="mx-auto w-full max-w-[210mm] bg-white p-[16mm] font-work-sans print:max-w-none print:p-0">
       <header className="mb-8 text-center">
         <h1 className="text-xl font-bold">{document.title}</h1>
-        <p className="mt-1 text-sm text-slate-600">{document.subtitle}</p>
+        <p className="mt-1 text-sm text-slate-600 whitespace-pre-line">{document.subtitle}</p>
         <h2 className="mt-4 text-lg font-semibold">Marking Scheme</h2>
       </header>
 
