@@ -1,0 +1,989 @@
+{
+  "title": "MID TERM EXAMINATION -FEBRUARY 2026\nGRADE 9 - NATIONAL",
+  "subtitle": "HEALTH AND PHYSICAL EDUCATION",
+  "duration": "60 minutes",
+  "instructions": "Read the questions carefully before answering the paper.\nWrite your name and the class in box at the top of the page.\nMarks for each question are shown in brackets.",
+  "blocks": [
+    {
+      "id": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "type": "big-question",
+      "title": "Underline the correct answer.",
+      "points": 10,
+      "diagramDataUrl": null,
+      "table": null,
+      "description": "Answer all the questions."
+    },
+    {
+      "id": "mcq-relay-001",
+      "type": "mcq",
+      "title": "Who must pick up a dropped baton in a relay race?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "The receiver",
+        "The giver",
+        "Any team member",
+        "The track official"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 1
+    },
+    {
+      "id": "mcq-nutri-002",
+      "type": "mcq",
+      "title": "If a pregnant woman does not receive enough nutrients the baby can be exposed to the following risks, select the WRONG one.",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Low birth weight",
+        "Premature birth",
+        "High immunity at birth",
+        "Risk of stillbirth"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 2
+    },
+    {
+      "id": "mcq-complex-003",
+      "type": "mcq",
+      "title": "Why are small fish better for pregnant mothers?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Less fat",
+        "Easier to cook",
+        "More calcium/zinc",
+        "Higher protein"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 2
+    },
+    {
+      "id": "mcq-nutri-004",
+      "type": "mcq",
+      "title": "According to nutritional guidelines, at what point should pregnant women be started on iron tablets? Select the correct one.",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "From the first week of pregnancy",
+        "After the first 3 months (12 weeks)",
+        "Only during the last month",
+        "Only after the baby is born"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 1
+    },
+    {
+      "id": "mcq-nutri-005",
+      "type": "mcq",
+      "title": "Regarding the daily energy requirement of a youth (adolescent), which of the following is correct?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "1500 - 1800 kilocalories",
+        "2200 - 2500 kilocalories",
+        "3500 - 4000 kilocalories",
+        "500 - 800 kilocalories"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 1
+    },
+    {
+      "id": "mcq-complex-006",
+      "type": "mcq",
+      "title": "What helps sports persons prevent muscle fatigue?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Extra protein",
+        "Salts/Carbohydrates",
+        "Fats",
+        "Vitamin C"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 1
+    },
+    {
+      "id": "mcq-relay-007",
+      "type": "mcq",
+      "title": "Baton change techniques are classified into two groups, identify the WRONG technique from the list below.",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Upsweep technique",
+        "Downsweep technique",
+        "Sideway-sweep technique",
+        "None of the above"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 2
+    },
+    {
+      "id": "mcq-complex-008",
+      "type": "mcq",
+      "title": "How is the hand held in the downsweep technique?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Palm down",
+        "Side thumb",
+        "Palm up",
+        "Clenched fist"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 2
+    },
+    {
+      "id": "mcq-jump-009",
+      "type": "mcq",
+      "title": "There are three specific techniques used in Long Jump, identify the one that is NOT a recognized technique.",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Sail technique",
+        "Hang technique",
+        "Hitch-kick technique",
+        "Straddle technique"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 3
+    },
+    {
+      "id": "mcq-complex-010",
+      "type": "mcq",
+      "title": "How should vegans get essential amino acids?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "options": [
+        "Green leaves only",
+        "Grains and pulses",
+        "Supplements",
+        "Fruit diet"
+      ],
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-de536667-7f25-4228-9adb-ffcf93c2746b",
+      "correctAnswer": 1
+    },
+    {
+      "id": "bigq-e5ac690a-1233-43dc-b0d6-aa19e55cc217",
+      "type": "big-question",
+      "title": "Write short answers.",
+      "points": 10,
+      "diagramDataUrl": null,
+      "table": null,
+      "description": ""
+    },
+    {
+      "id": "bigq-b741046f-0007-4b6e-b16a-b5c5cce9b798",
+      "type": "big-question",
+      "title": "Write short answers.",
+      "points": 10,
+      "diagramDataUrl": null,
+      "table": null,
+      "description": ""
+    },
+    {
+      "id": "short-7306c117-28d8-4f98-b3ae-7c241f314d1a",
+      "type": "short-answer",
+      "title": "How would you classify long jump according to the classification of athletic events.",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 1,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-b741046f-0007-4b6e-b16a-b5c5cce9b798",
+      "answer": "It is a horizontal jump field event."
+    },
+    {
+      "id": "short-answer-329719c9-1078-45b1-9ac7-5e571df9a4ac",
+      "type": "short-answer",
+      "title": "What are the 3 techniques of long jump?",
+      "points": 3,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 3,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-b741046f-0007-4b6e-b16a-b5c5cce9b798",
+      "answer": "1. Hang technique\n2. Sail technique\n3. Hitch kick technique"
+    },
+    {
+      "id": "short-answer-634a0760-a6e3-43ea-9a4f-c6fb9409432f",
+      "type": "short-answer",
+      "title": "What are the 4 phases of long jump?",
+      "points": 4,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 4,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-b741046f-0007-4b6e-b16a-b5c5cce9b798",
+      "answer": "1. Approach run\n2. Take off\n3. Flight\n4. Landing\n"
+    },
+    {
+      "id": "short-answer-3f21c6af-8c45-4d2c-b73b-d38a47d1ad6f",
+      "type": "short-answer",
+      "title": "State 2 occasions which are considered as failures / foules in long jump.",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-b741046f-0007-4b6e-b16a-b5c5cce9b798",
+      "markingInstructions": "Give marks for any similar answers. \nRefer to page 78 of the textbook.",
+      "answer": "1. Touching the ground beyond the take off  line with any part of the jumper’s body while taking off for the jump.\n2. Taking of by placing the take off foot on the ground outside of the 2 sides of the take off board."
+    },
+    {
+      "id": "short-b392ec78-62b8-446e-8228-72cd4ae4a27d",
+      "type": "short-answer",
+      "title": "State 2 factors that are very important in relay races.",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-e5ac690a-1233-43dc-b0d6-aa19e55cc217",
+      "markingInstructions": "",
+      "answer": "Maintaining a maximum running speed throughout the race.\nChanging of the baton correctly and efficiently."
+    },
+    {
+      "id": "short-995b9319-4e6e-418b-ba0e-00b0f1b20cf4",
+      "type": "short-answer",
+      "title": "State the 2 important factors for a correct baton change.",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-e5ac690a-1233-43dc-b0d6-aa19e55cc217",
+      "answer": "1. Runners have a good training.\n2. Good understanding among them.",
+      "markingInstructions": "Give marks for any similar answers."
+    },
+    {
+      "id": "short-answer-3f064ca8-6ac2-446a-8bc1-8591a29a231e",
+      "type": "short-answer",
+      "title": "Fill in the blanks with the correct word.",
+      "points": 3,
+      "diagramDataUrl": "data:image/svg+xml,base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBEbyBub3QgZWRpdCB0aGlzIGZpbGUgd2l0aCBlZGl0b3JzIG90aGVyIHRoYW4gZHJhdy5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJiYWNrZ3JvdW5kOiAjZmZmZmZmOyBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodC1kYXJrKCNmZmZmZmYsIHZhcigtLWdlLWRhcmstY29sb3IsICMxMjEyMTIpKTsgY29sb3Itc2NoZW1lOiBsaWdodCBkYXJrOyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgd2lkdGg9IjgwMXB4IiBoZWlnaHQ9IjM4MXB4IiB2aWV3Qm94PSIwIDAgODAxIDM4MSIgY29udGVudD0iJmx0O214ZmlsZSBob3N0PSZxdW90O2FwcC5kaWFncmFtcy5uZXQmcXVvdDsgc2NhbGU9JnF1b3Q7MSZxdW90OyBib3JkZXI9JnF1b3Q7MjAmcXVvdDsmZ3Q7JiMxMDsgICZsdDtkaWFncmFtIG5hbWU9JnF1b3Q7UGFnZS0xJnF1b3Q7IGlkPSZxdW90O3pacnBtVDVaamtzM19meXV5MEZrJnF1b3Q7Jmd0OyYjMTA7ICAgICZsdDtteEdyYXBoTW9kZWwgZHg9JnF1b3Q7OTc3JnF1b3Q7IGR5PSZxdW90OzEyMjImcXVvdDsgZ3JpZD0mcXVvdDsxJnF1b3Q7IGdyaWRTaXplPSZxdW90OzEwJnF1b3Q7IGd1aWRlcz0mcXVvdDsxJnF1b3Q7IHRvb2x0aXBzPSZxdW90OzEmcXVvdDsgY29ubmVjdD0mcXVvdDsxJnF1b3Q7IGFycm93cz0mcXVvdDsxJnF1b3Q7IGZvbGQ9JnF1b3Q7MSZxdW90OyBwYWdlPSZxdW90OzEmcXVvdDsgcGFnZVNjYWxlPSZxdW90OzEmcXVvdDsgcGFnZVdpZHRoPSZxdW90Ozg1MCZxdW90OyBwYWdlSGVpZ2h0PSZxdW90OzExMDAmcXVvdDsgbWF0aD0mcXVvdDswJnF1b3Q7IHNoYWRvdz0mcXVvdDswJnF1b3Q7Jmd0OyYjMTA7ICAgICAgJmx0O3Jvb3QmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7MCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90OzEmcXVvdDsgcGFyZW50PSZxdW90OzAmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0xJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHN0eWxlPSZxdW90O3JvdW5kZWQ9MDt3aGl0ZVNwYWNlPXdyYXA7aHRtbD0xO2ZvbnRGYW1pbHk9VGltZXMgTmV3IFJvbWFuOyZxdW90OyB2YWx1ZT0mcXVvdDtSZWxheSBCYXRvbiBDaGFuZ2VvdmVyIENsYXNzaWZpY2F0aW9ucyZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NDAmcXVvdDsgd2lkdGg9JnF1b3Q7MTYwJnF1b3Q7IHg9JnF1b3Q7MzYwJnF1b3Q7IHk9JnF1b3Q7MTIwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTImcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc3R5bGU9JnF1b3Q7cm91bmRlZD0wO3doaXRlU3BhY2U9d3JhcDtodG1sPTE7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHZhbHVlPSZxdW90O0hhbmRvdmVyIFRlY2huaXF1ZSZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NDAmcXVvdDsgd2lkdGg9JnF1b3Q7MTYwJnF1b3Q7IHg9JnF1b3Q7MTIwJnF1b3Q7IHk9JnF1b3Q7MjAwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTMmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc3R5bGU9JnF1b3Q7cm91bmRlZD0wO3doaXRlU3BhY2U9d3JhcDtodG1sPTE7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHZhbHVlPSZxdW90O0xhbmUgUG9zaXRpb25pbmcmcXVvdDsgdmVydGV4PSZxdW90OzEmcXVvdDsmZ3Q7JiMxMDsgICAgICAgICAgJmx0O214R2VvbWV0cnkgaGVpZ2h0PSZxdW90OzQwJnF1b3Q7IHdpZHRoPSZxdW90OzE2MCZxdW90OyB4PSZxdW90OzM2MCZxdW90OyB5PSZxdW90OzIwMCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi00JnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHN0eWxlPSZxdW90O3JvdW5kZWQ9MDt3aGl0ZVNwYWNlPXdyYXA7aHRtbD0xO2ZvbnRGYW1pbHk9VGltZXMgTmV3IFJvbWFuOyZxdW90OyB2YWx1ZT0mcXVvdDtSdW5uZXIgQ29tbXVuaWNhdGlvbiZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NDAmcXVvdDsgd2lkdGg9JnF1b3Q7MTYwJnF1b3Q7IHg9JnF1b3Q7NjAwJnF1b3Q7IHk9JnF1b3Q7MjAwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O1Rxd2VqY1N3c05SVU9VX1N5UXdPLTEmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc3R5bGU9JnF1b3Q7cm91bmRlZD0wO3doaXRlU3BhY2U9d3JhcDtodG1sPTE7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHZhbHVlPSZxdW90O1VwIHN3ZWVwJnF1b3Q7IHZlcnRleD0mcXVvdDsxJnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDszMCZxdW90OyB3aWR0aD0mcXVvdDsxMDAmcXVvdDsgeD0mcXVvdDs2MCZxdW90OyB5PSZxdW90OzI4MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0yJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHN0eWxlPSZxdW90O3JvdW5kZWQ9MDt3aGl0ZVNwYWNlPXdyYXA7aHRtbD0xO2ZvbnRGYW1pbHk9VGltZXMgTmV3IFJvbWFuO2FsaWduPWNlbnRlcjt2ZXJ0aWNhbEFsaWduPWJvdHRvbTsmcXVvdDsgdmFsdWU9JnF1b3Q7QSAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uJnF1b3Q7IHZlcnRleD0mcXVvdDsxJnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDs0MCZxdW90OyB3aWR0aD0mcXVvdDsxNzAmcXVvdDsgeD0mcXVvdDs5MCZxdW90OyB5PSZxdW90OzM2MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0zJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHN0eWxlPSZxdW90O3JvdW5kZWQ9MDt3aGl0ZVNwYWNlPXdyYXA7aHRtbD0xO2ZvbnRGYW1pbHk9VGltZXMgTmV3IFJvbWFuOyZxdW90OyB2YWx1ZT0mcXVvdDtJbnNpZGUgcGFzcyZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7MzAmcXVvdDsgd2lkdGg9JnF1b3Q7ODAmcXVvdDsgeD0mcXVvdDsyODAmcXVvdDsgeT0mcXVvdDszNTAmcXVvdDsgYXM9JnF1b3Q7Z2VvbWV0cnkmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tNCZxdW90OyBwYXJlbnQ9JnF1b3Q7MSZxdW90OyBzdHlsZT0mcXVvdDtyb3VuZGVkPTA7d2hpdGVTcGFjZT13cmFwO2h0bWw9MTtmb250RmFtaWx5PVRpbWVzIE5ldyBSb21hbjsmcXVvdDsgdmFsdWU9JnF1b3Q7T3V0c2lkZSBwYXNzJnF1b3Q7IHZlcnRleD0mcXVvdDsxJnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDszMCZxdW90OyB3aWR0aD0mcXVvdDs4MCZxdW90OyB4PSZxdW90OzQwMCZxdW90OyB5PSZxdW90OzM1MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty01JnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHN0eWxlPSZxdW90O3JvdW5kZWQ9MDt3aGl0ZVNwYWNlPXdyYXA7aHRtbD0xO2ZvbnRGYW1pbHk9VGltZXMgTmV3IFJvbWFuO3ZlcnRpY2FsQWxpZ249Ym90dG9tOyZxdW90OyB2YWx1ZT0mcXVvdDtCLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NDAmcXVvdDsgd2lkdGg9JnF1b3Q7MTkwJnF1b3Q7IHg9JnF1b3Q7NDAwJnF1b3Q7IHk9JnF1b3Q7NDIwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O1Rxd2VqY1N3c05SVU9VX1N5UXdPLTYmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc3R5bGU9JnF1b3Q7cm91bmRlZD0wO3doaXRlU3BhY2U9d3JhcDtodG1sPTE7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHZhbHVlPSZxdW90O1Zpc3VhbCBwYXNzJnF1b3Q7IHZlcnRleD0mcXVvdDsxJnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDszMCZxdW90OyB3aWR0aD0mcXVvdDsxMDAmcXVvdDsgeD0mcXVvdDs1NjAmcXVvdDsgeT0mcXVvdDsyODAmcXVvdDsgYXM9JnF1b3Q7Z2VvbWV0cnkmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tNyZxdW90OyBwYXJlbnQ9JnF1b3Q7MSZxdW90OyBzdHlsZT0mcXVvdDtyb3VuZGVkPTA7d2hpdGVTcGFjZT13cmFwO2h0bWw9MTtmb250RmFtaWx5PVRpbWVzIE5ldyBSb21hbjt2ZXJ0aWNhbEFsaWduPWJvdHRvbTsmcXVvdDsgdmFsdWU9JnF1b3Q7Qy4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiZxdW90OyB2ZXJ0ZXg9JnF1b3Q7MSZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NDAmcXVvdDsgd2lkdGg9JnF1b3Q7MjAwJnF1b3Q7IHg9JnF1b3Q7NjIwJnF1b3Q7IHk9JnF1b3Q7MzUwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O1Rxd2VqY1N3c05SVU9VX1N5UXdPLTgmcXVvdDsgZWRnZT0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHNvdXJjZT0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0xJnF1b3Q7IHN0eWxlPSZxdW90O2VuZEFycm93PWNsYXNzaWM7aHRtbD0xO3JvdW5kZWQ9MDtleGl0WD0wLjU7ZXhpdFk9MTtleGl0RHg9MDtleGl0RHk9MDtlbnRyeVg9MC41O2VudHJ5WT0wO2VudHJ5RHg9MDtlbnRyeUR5PTA7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHRhcmdldD0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0yJnF1b3Q7IHZhbHVlPSZxdW90OyZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NTAmcXVvdDsgcmVsYXRpdmU9JnF1b3Q7MSZxdW90OyB3aWR0aD0mcXVvdDs1MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7NDAwJnF1b3Q7IHk9JnF1b3Q7NjUwJnF1b3Q7IGFzPSZxdW90O3NvdXJjZVBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzQ1MCZxdW90OyB5PSZxdW90OzYwMCZxdW90OyBhcz0mcXVvdDt0YXJnZXRQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICZsdDsvbXhHZW9tZXRyeSZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tOSZxdW90OyBlZGdlPSZxdW90OzEmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc291cmNlPSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTEmcXVvdDsgc3R5bGU9JnF1b3Q7ZW5kQXJyb3c9Y2xhc3NpYztodG1sPTE7cm91bmRlZD0wO2V4aXRYPTAuNTtleGl0WT0xO2V4aXREeD0wO2V4aXREeT0wO2VudHJ5WD0wLjU7ZW50cnlZPTA7ZW50cnlEeD0wO2VudHJ5RHk9MDtmb250RmFtaWx5PVRpbWVzIE5ldyBSb21hbjsmcXVvdDsgdGFyZ2V0PSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTMmcXVvdDsgdmFsdWU9JnF1b3Q7JnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDs1MCZxdW90OyByZWxhdGl2ZT0mcXVvdDsxJnF1b3Q7IHdpZHRoPSZxdW90OzUwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICAgJmx0O214UG9pbnQgeD0mcXVvdDs0MzUmcXVvdDsgeT0mcXVvdDsxNzAmcXVvdDsgYXM9JnF1b3Q7c291cmNlUG9pbnQmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7MjEwJnF1b3Q7IHk9JnF1b3Q7MjEwJnF1b3Q7IGFzPSZxdW90O3RhcmdldFBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgJmx0Oy9teEdlb21ldHJ5Jmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0xMCZxdW90OyBlZGdlPSZxdW90OzEmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc291cmNlPSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTEmcXVvdDsgc3R5bGU9JnF1b3Q7ZW5kQXJyb3c9Y2xhc3NpYztodG1sPTE7cm91bmRlZD0wO2V4aXRYPTAuNTtleGl0WT0xO2V4aXREeD0wO2V4aXREeT0wO2VudHJ5WD0wLjU7ZW50cnlZPTA7ZW50cnlEeD0wO2VudHJ5RHk9MDtmb250RmFtaWx5PVRpbWVzIE5ldyBSb21hbjsmcXVvdDsgdGFyZ2V0PSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTQmcXVvdDsgdmFsdWU9JnF1b3Q7JnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDs1MCZxdW90OyByZWxhdGl2ZT0mcXVvdDsxJnF1b3Q7IHdpZHRoPSZxdW90OzUwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICAgJmx0O214UG9pbnQgeD0mcXVvdDs0MzUmcXVvdDsgeT0mcXVvdDsxNzAmcXVvdDsgYXM9JnF1b3Q7c291cmNlUG9pbnQmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7NDM1JnF1b3Q7IHk9JnF1b3Q7MjEwJnF1b3Q7IGFzPSZxdW90O3RhcmdldFBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgJmx0Oy9teEdlb21ldHJ5Jmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0xMSZxdW90OyBlZGdlPSZxdW90OzEmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc291cmNlPSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTImcXVvdDsgc3R5bGU9JnF1b3Q7ZW5kQXJyb3c9Y2xhc3NpYztodG1sPTE7cm91bmRlZD0wO2V4aXRYPTAuNTtleGl0WT0xO2V4aXREeD0wO2V4aXREeT0wO2VudHJ5WD0wLjU7ZW50cnlZPTA7ZW50cnlEeD0wO2VudHJ5RHk9MDtmb250RmFtaWx5PVRpbWVzIE5ldyBSb21hbjsmcXVvdDsgdGFyZ2V0PSZxdW90O1Rxd2VqY1N3c05SVU9VX1N5UXdPLTEmcXVvdDsgdmFsdWU9JnF1b3Q7JnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICZsdDtteEdlb21ldHJ5IGhlaWdodD0mcXVvdDs1MCZxdW90OyByZWxhdGl2ZT0mcXVvdDsxJnF1b3Q7IHdpZHRoPSZxdW90OzUwJnF1b3Q7IGFzPSZxdW90O2dlb21ldHJ5JnF1b3Q7Jmd0OyYjMTA7ICAgICAgICAgICAgJmx0O214UG9pbnQgeD0mcXVvdDs0MzUmcXVvdDsgeT0mcXVvdDsxNzAmcXVvdDsgYXM9JnF1b3Q7c291cmNlUG9pbnQmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7MjEwJnF1b3Q7IHk9JnF1b3Q7MjEwJnF1b3Q7IGFzPSZxdW90O3RhcmdldFBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgJmx0Oy9teEdlb21ldHJ5Jmd0OyYjMTA7ICAgICAgICAmbHQ7L214Q2VsbCZndDsmIzEwOyAgICAgICAgJmx0O214Q2VsbCBpZD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0xMiZxdW90OyBlZGdlPSZxdW90OzEmcXVvdDsgcGFyZW50PSZxdW90OzEmcXVvdDsgc291cmNlPSZxdW90O0J4QnQybHpvaFYxYkVRXzJQZ2kyLTImcXVvdDsgc3R5bGU9JnF1b3Q7ZW5kQXJyb3c9Y2xhc3NpYztodG1sPTE7cm91bmRlZD0wO2V4aXRYPTAuNTtleGl0WT0xO2V4aXREeD0wO2V4aXREeT0wO2VudHJ5WD0wLjc1O2VudHJ5WT0wO2VudHJ5RHg9MDtlbnRyeUR5PTA7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHRhcmdldD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0yJnF1b3Q7IHZhbHVlPSZxdW90OyZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NTAmcXVvdDsgcmVsYXRpdmU9JnF1b3Q7MSZxdW90OyB3aWR0aD0mcXVvdDs1MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7MjEwJnF1b3Q7IHk9JnF1b3Q7MjUwJnF1b3Q7IGFzPSZxdW90O3NvdXJjZVBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzEzMCZxdW90OyB5PSZxdW90OzI5MCZxdW90OyBhcz0mcXVvdDt0YXJnZXRQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICZsdDsvbXhHZW9tZXRyeSZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tMTMmcXVvdDsgZWRnZT0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHNvdXJjZT0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0zJnF1b3Q7IHN0eWxlPSZxdW90O2VuZEFycm93PWNsYXNzaWM7aHRtbD0xO3JvdW5kZWQ9MDtleGl0WD0wLjU7ZXhpdFk9MTtleGl0RHg9MDtleGl0RHk9MDtlbnRyeVg9MC41O2VudHJ5WT0wO2VudHJ5RHg9MDtlbnRyeUR5PTA7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHRhcmdldD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty0zJnF1b3Q7IHZhbHVlPSZxdW90OyZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NTAmcXVvdDsgcmVsYXRpdmU9JnF1b3Q7MSZxdW90OyB3aWR0aD0mcXVvdDs1MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7MjEwJnF1b3Q7IHk9JnF1b3Q7MjUwJnF1b3Q7IGFzPSZxdW90O3NvdXJjZVBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzEzMCZxdW90OyB5PSZxdW90OzI5MCZxdW90OyBhcz0mcXVvdDt0YXJnZXRQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICZsdDsvbXhHZW9tZXRyeSZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tMTQmcXVvdDsgZWRnZT0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHNvdXJjZT0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0zJnF1b3Q7IHN0eWxlPSZxdW90O2VuZEFycm93PWNsYXNzaWM7aHRtbD0xO3JvdW5kZWQ9MDtleGl0WD0wLjU7ZXhpdFk9MTtleGl0RHg9MDtleGl0RHk9MDtlbnRyeVg9MC41O2VudHJ5WT0wO2VudHJ5RHg9MDtlbnRyeUR5PTA7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHRhcmdldD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty00JnF1b3Q7IHZhbHVlPSZxdW90OyZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NTAmcXVvdDsgcmVsYXRpdmU9JnF1b3Q7MSZxdW90OyB3aWR0aD0mcXVvdDs1MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7NDM1JnF1b3Q7IHk9JnF1b3Q7MjUwJnF1b3Q7IGFzPSZxdW90O3NvdXJjZVBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzM3MCZxdW90OyB5PSZxdW90OzI5MCZxdW90OyBhcz0mcXVvdDt0YXJnZXRQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICZsdDsvbXhHZW9tZXRyeSZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tMTUmcXVvdDsgZWRnZT0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHNvdXJjZT0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0zJnF1b3Q7IHN0eWxlPSZxdW90O2VuZEFycm93PWNsYXNzaWM7aHRtbD0xO3JvdW5kZWQ9MDtleGl0WD0wLjU7ZXhpdFk9MTtleGl0RHg9MDtleGl0RHk9MDtlbnRyeVg9MC43NTtlbnRyeVk9MDtlbnRyeUR4PTA7ZW50cnlEeT0wO2ZvbnRGYW1pbHk9VGltZXMgTmV3IFJvbWFuOyZxdW90OyB0YXJnZXQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tNSZxdW90OyB2YWx1ZT0mcXVvdDsmcXVvdDsmZ3Q7JiMxMDsgICAgICAgICAgJmx0O214R2VvbWV0cnkgaGVpZ2h0PSZxdW90OzUwJnF1b3Q7IHJlbGF0aXZlPSZxdW90OzEmcXVvdDsgd2lkdGg9JnF1b3Q7NTAmcXVvdDsgYXM9JnF1b3Q7Z2VvbWV0cnkmcXVvdDsmZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzQzNSZxdW90OyB5PSZxdW90OzI1MCZxdW90OyBhcz0mcXVvdDtzb3VyY2VQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICAgJmx0O214UG9pbnQgeD0mcXVvdDs0NjAmcXVvdDsgeT0mcXVvdDsyOTAmcXVvdDsgYXM9JnF1b3Q7dGFyZ2V0UG9pbnQmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgICAmbHQ7L214R2VvbWV0cnkmZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgICAmbHQ7bXhDZWxsIGlkPSZxdW90O1Rxd2VqY1N3c05SVU9VX1N5UXdPLTE2JnF1b3Q7IGVkZ2U9JnF1b3Q7MSZxdW90OyBwYXJlbnQ9JnF1b3Q7MSZxdW90OyBzb3VyY2U9JnF1b3Q7QnhCdDJsem9oVjFiRVFfMlBnaTItNCZxdW90OyBzdHlsZT0mcXVvdDtlbmRBcnJvdz1jbGFzc2ljO2h0bWw9MTtyb3VuZGVkPTA7ZXhpdFg9MC41O2V4aXRZPTE7ZXhpdER4PTA7ZXhpdER5PTA7Zm9udEZhbWlseT1UaW1lcyBOZXcgUm9tYW47JnF1b3Q7IHRhcmdldD0mcXVvdDtUcXdlamNTd3NOUlVPVV9TeVF3Ty02JnF1b3Q7IHZhbHVlPSZxdW90OyZxdW90OyZndDsmIzEwOyAgICAgICAgICAmbHQ7bXhHZW9tZXRyeSBoZWlnaHQ9JnF1b3Q7NTAmcXVvdDsgcmVsYXRpdmU9JnF1b3Q7MSZxdW90OyB3aWR0aD0mcXVvdDs1MCZxdW90OyBhcz0mcXVvdDtnZW9tZXRyeSZxdW90OyZndDsmIzEwOyAgICAgICAgICAgICZsdDtteFBvaW50IHg9JnF1b3Q7NDM1JnF1b3Q7IHk9JnF1b3Q7MjUwJnF1b3Q7IGFzPSZxdW90O3NvdXJjZVBvaW50JnF1b3Q7IC8mZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzU1MCZxdW90OyB5PSZxdW90OzI5MCZxdW90OyBhcz0mcXVvdDt0YXJnZXRQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICZsdDsvbXhHZW9tZXRyeSZndDsmIzEwOyAgICAgICAgJmx0Oy9teENlbGwmZ3Q7JiMxMDsgICAgICAgICZsdDtteENlbGwgaWQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tMTcmcXVvdDsgZWRnZT0mcXVvdDsxJnF1b3Q7IHBhcmVudD0mcXVvdDsxJnF1b3Q7IHNvdXJjZT0mcXVvdDtCeEJ0Mmx6b2hWMWJFUV8yUGdpMi00JnF1b3Q7IHN0eWxlPSZxdW90O2VuZEFycm93PWNsYXNzaWM7aHRtbD0xO3JvdW5kZWQ9MDtleGl0WD0wLjU7ZXhpdFk9MTtleGl0RHg9MDtleGl0RHk9MDtlbnRyeVg9MC42NTU7ZW50cnlZPTA7ZW50cnlEeD0wO2VudHJ5RHk9MDtmb250RmFtaWx5PVRpbWVzIE5ldyBSb21hbjtlbnRyeVBlcmltZXRlcj0wOyZxdW90OyB0YXJnZXQ9JnF1b3Q7VHF3ZWpjU3dzTlJVT1VfU3lRd08tNyZxdW90OyB2YWx1ZT0mcXVvdDsmcXVvdDsmZ3Q7JiMxMDsgICAgICAgICAgJmx0O214R2VvbWV0cnkgaGVpZ2h0PSZxdW90OzUwJnF1b3Q7IHJlbGF0aXZlPSZxdW90OzEmcXVvdDsgd2lkdGg9JnF1b3Q7NTAmcXVvdDsgYXM9JnF1b3Q7Z2VvbWV0cnkmcXVvdDsmZ3Q7JiMxMDsgICAgICAgICAgICAmbHQ7bXhQb2ludCB4PSZxdW90OzY0MCZxdW90OyB5PSZxdW90OzI0MCZxdW90OyBhcz0mcXVvdDtzb3VyY2VQb2ludCZxdW90OyAvJmd0OyYjMTA7ICAgICAgICAgICAgJmx0O214UG9pbnQgeD0mcXVvdDs2NTcmcXVvdDsgeT0mcXVvdDsyOTAmcXVvdDsgYXM9JnF1b3Q7dGFyZ2V0UG9pbnQmcXVvdDsgLyZndDsmIzEwOyAgICAgICAgICAmbHQ7L214R2VvbWV0cnkmZ3Q7JiMxMDsgICAgICAgICZsdDsvbXhDZWxsJmd0OyYjMTA7ICAgICAgJmx0Oy9yb290Jmd0OyYjMTA7ICAgICZsdDsvbXhHcmFwaE1vZGVsJmd0OyYjMTA7ICAmbHQ7L2RpYWdyYW0mZ3Q7JiMxMDsmbHQ7L214ZmlsZSZndDsmIzEwOyI+PGRlZnMvPjxyZWN0IGZpbGw9IiNmZmZmZmYiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKCNmZmZmZmYsIHZhcigtLWdlLWRhcmstY29sb3IsICMxMjEyMTIpKTsiLz48Zz48ZyBkYXRhLWNlbGwtaWQ9IjAiPjxnIGRhdGEtY2VsbC1pZD0iMSI+PGcgZGF0YS1jZWxsLWlkPSJCeEJ0Mmx6b2hWMWJFUV8yUGdpMi0xIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHJlY3QgeD0iMzIwIiB5PSIyMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyaygjZmZmZmZmLCB2YXIoLS1nZS1kYXJrLWNvbG9yLCAjMTIxMjEyKSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjxnPjxnPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlcXVpcmVkRmVhdHVyZXM9Imh0dHA6Ly93d3cudzMub3JnL1RSL1NWRzExL2ZlYXR1cmUjRXh0ZW5zaWJpbGl0eSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxNThweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiA0MHB4OyBtYXJnaW4tbGVmdDogMzIxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPlJlbGF5IEJhdG9uIENoYW5nZW92ZXIgQ2xhc3NpZmljYXRpb25zPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjQwMCIgeT0iNDQiIGZpbGw9ImxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZikiIGZvbnQtZmFtaWx5PSInVGltZXMgTmV3IFJvbWFuJyIgZm9udC1zaXplPSIxMnB4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5SZWxheSBCYXRvbiBDaGFuZ2VvdmVyIENsYS4uLjwvdGV4dD48L3N3aXRjaD48L2c+PC9nPjwvZz48ZyBkYXRhLWNlbGwtaWQ9IkJ4QnQybHpvaFYxYkVRXzJQZ2kyLTIiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwwLjUpIj48cmVjdCB4PSI4MCIgeT0iMTAwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKCNmZmZmZmYsIHZhcigtLWdlLWRhcmstY29sb3IsICMxMjEyMTIpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PGc+PGc+PHN3aXRjaD48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVxdWlyZWRGZWF0dXJlcz0iaHR0cDovL3d3dy53My5vcmcvVFIvU1ZHMTEvZmVhdHVyZSNFeHRlbnNpYmlsaXR5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDE1OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDEyMHB4OyBtYXJnaW4tbGVmdDogODFweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzAwMDAwMDsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nOyBjb2xvcjogbGlnaHQtZGFyaygjMDAwMDAwLCAjZmZmZmZmKTsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+SGFuZG92ZXIgVGVjaG5pcXVlPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjE2MCIgeT0iMTI0IiBmaWxsPSJsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbiciIGZvbnQtc2l6ZT0iMTJweCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGFuZG92ZXIgVGVjaG5pcXVlPC90ZXh0Pjwvc3dpdGNoPjwvZz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iQnhCdDJsem9oVjFiRVFfMlBnaTItMyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxyZWN0IHg9IjMyMCIgeT0iMTAwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKCNmZmZmZmYsIHZhcigtLWdlLWRhcmstY29sb3IsICMxMjEyMTIpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PGc+PGc+PHN3aXRjaD48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVxdWlyZWRGZWF0dXJlcz0iaHR0cDovL3d3dy53My5vcmcvVFIvU1ZHMTEvZmVhdHVyZSNFeHRlbnNpYmlsaXR5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDE1OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDEyMHB4OyBtYXJnaW4tbGVmdDogMzIxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPkxhbmUgUG9zaXRpb25pbmc8L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PHRleHQgeD0iNDAwIiB5PSIxMjQiIGZpbGw9ImxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZikiIGZvbnQtZmFtaWx5PSInVGltZXMgTmV3IFJvbWFuJyIgZm9udC1zaXplPSIxMnB4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MYW5lIFBvc2l0aW9uaW5nPC90ZXh0Pjwvc3dpdGNoPjwvZz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iQnhCdDJsem9oVjFiRVFfMlBnaTItNCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxyZWN0IHg9IjU2MCIgeT0iMTAwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKCNmZmZmZmYsIHZhcigtLWdlLWRhcmstY29sb3IsICMxMjEyMTIpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PGc+PGc+PHN3aXRjaD48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgcmVxdWlyZWRGZWF0dXJlcz0iaHR0cDovL3d3dy53My5vcmcvVFIvU1ZHMTEvZmVhdHVyZSNFeHRlbnNpYmlsaXR5Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDE1OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDEyMHB4OyBtYXJnaW4tbGVmdDogNTYxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPlJ1bm5lciBDb21tdW5pY2F0aW9uPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjY0MCIgeT0iMTI0IiBmaWxsPSJsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbiciIGZvbnQtc2l6ZT0iMTJweCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UnVubmVyIENvbW11bmljYXRpb248L3RleHQ+PC9zd2l0Y2g+PC9nPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty0xIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHJlY3QgeD0iMjAiIHk9IjE4MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyaygjZmZmZmZmLCB2YXIoLS1nZS1kYXJrLWNvbG9yLCAjMTIxMjEyKSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjxnPjxnPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlcXVpcmVkRmVhdHVyZXM9Imh0dHA6Ly93d3cudzMub3JnL1RSL1NWRzExL2ZlYXR1cmUjRXh0ZW5zaWJpbGl0eSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiA5OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDE5NXB4OyBtYXJnaW4tbGVmdDogMjFweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyBjb2xvcjogIzAwMDAwMDsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nOyBjb2xvcjogbGlnaHQtZGFyaygjMDAwMDAwLCAjZmZmZmZmKTsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+VXAgc3dlZXA8L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PHRleHQgeD0iNzAiIHk9IjE5OSIgZmlsbD0ibGlnaHQtZGFyaygjMDAwMDAwLCAjZmZmZmZmKSIgZm9udC1mYW1pbHk9IidUaW1lcyBOZXcgUm9tYW4nIiBmb250LXNpemU9IjEycHgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlVwIHN3ZWVwPC90ZXh0Pjwvc3dpdGNoPjwvZz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iVHF3ZWpjU3dzTlJVT1VfU3lRd08tMiI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxyZWN0IHg9IjUwIiB5PSIyNjAiIHdpZHRoPSIxNzAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIgc3R5bGU9ImZpbGw6IGxpZ2h0LWRhcmsoI2ZmZmZmZiwgdmFyKC0tZ2UtZGFyay1jb2xvciwgIzEyMTIxMikpOyBzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjwvZz48Zz48Zz48c3dpdGNoPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXF1aXJlZEZlYXR1cmVzPSJodHRwOi8vd3d3LnczLm9yZy9UUi9TVkcxMS9mZWF0dXJlI0V4dGVuc2liaWxpdHkiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogdW5zYWZlIGZsZXgtZW5kOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxNjhweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAyOTdweDsgbWFyZ2luLWxlZnQ6IDUxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPkEgLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48dGV4dCB4PSIxMzUiIHk9IjI5NyIgZmlsbD0ibGlnaHQtZGFyaygjMDAwMDAwLCAjZmZmZmZmKSIgZm9udC1mYW1pbHk9IidUaW1lcyBOZXcgUm9tYW4nIiBmb250LXNpemU9IjEycHgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkEgLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi48L3RleHQ+PC9zd2l0Y2g+PC9nPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty0zIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHJlY3QgeD0iMjQwIiB5PSIyNTAiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyaygjZmZmZmZmLCB2YXIoLS1nZS1kYXJrLWNvbG9yLCAjMTIxMjEyKSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjxnPjxnPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlcXVpcmVkRmVhdHVyZXM9Imh0dHA6Ly93d3cudzMub3JnL1RSL1NWRzExL2ZlYXR1cmUjRXh0ZW5zaWJpbGl0eSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiA3OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDI2NXB4OyBtYXJnaW4tbGVmdDogMjQxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPkluc2lkZSBwYXNzPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjI4MCIgeT0iMjY5IiBmaWxsPSJsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbiciIGZvbnQtc2l6ZT0iMTJweCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW5zaWRlIHBhc3M8L3RleHQ+PC9zd2l0Y2g+PC9nPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty00Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHJlY3QgeD0iMzYwIiB5PSIyNTAiIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyaygjZmZmZmZmLCB2YXIoLS1nZS1kYXJrLWNvbG9yLCAjMTIxMjEyKSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjxnPjxnPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlcXVpcmVkRmVhdHVyZXM9Imh0dHA6Ly93d3cudzMub3JnL1RSL1NWRzExL2ZlYXR1cmUjRXh0ZW5zaWJpbGl0eSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiA3OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDI2NXB4OyBtYXJnaW4tbGVmdDogMzYxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPk91dHNpZGUgcGFzczwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48dGV4dCB4PSI0MDAiIHk9IjI2OSIgZmlsbD0ibGlnaHQtZGFyaygjMDAwMDAwLCAjZmZmZmZmKSIgZm9udC1mYW1pbHk9IidUaW1lcyBOZXcgUm9tYW4nIiBmb250LXNpemU9IjEycHgiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk91dHNpZGUgcGFzczwvdGV4dD48L3N3aXRjaD48L2c+PC9nPjwvZz48ZyBkYXRhLWNlbGwtaWQ9IlRxd2VqY1N3c05SVU9VX1N5UXdPLTUiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwwLjUpIj48cmVjdCB4PSIzNjAiIHk9IjMyMCIgd2lkdGg9IjE5MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyaygjZmZmZmZmLCB2YXIoLS1nZS1kYXJrLWNvbG9yLCAjMTIxMjEyKSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjxnPjxnPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlcXVpcmVkRmVhdHVyZXM9Imh0dHA6Ly93d3cudzMub3JnL1RSL1NWRzExL2ZlYXR1cmUjRXh0ZW5zaWJpbGl0eSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgZmxleC1lbmQ7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDE4OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDM1N3B4OyBtYXJnaW4tbGVmdDogMzYxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPkIuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjQ1NSIgeT0iMzU3IiBmaWxsPSJsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbiciIGZvbnQtc2l6ZT0iMTJweCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Qi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLjwvdGV4dD48L3N3aXRjaD48L2c+PC9nPjwvZz48ZyBkYXRhLWNlbGwtaWQ9IlRxd2VqY1N3c05SVU9VX1N5UXdPLTYiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwwLjUpIj48cmVjdCB4PSI1MjAiIHk9IjE4MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyaygjZmZmZmZmLCB2YXIoLS1nZS1kYXJrLWNvbG9yLCAjMTIxMjEyKSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjxnPjxnPjxzd2l0Y2g+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlcXVpcmVkRmVhdHVyZXM9Imh0dHA6Ly93d3cudzMub3JnL1RSL1NWRzExL2ZlYXR1cmUjRXh0ZW5zaWJpbGl0eSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiA5OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDE5NXB4OyBtYXJnaW4tbGVmdDogNTIxcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDAwMDA7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJzsgY29sb3I6IGxpZ2h0LWRhcmsoIzAwMDAwMCwgI2ZmZmZmZik7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPlZpc3VhbCBwYXNzPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjU3MCIgeT0iMTk5IiBmaWxsPSJsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbiciIGZvbnQtc2l6ZT0iMTJweCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VmlzdWFsIHBhc3M8L3RleHQ+PC9zd2l0Y2g+PC9nPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty03Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHJlY3QgeD0iNTgwIiB5PSIyNTAiIHdpZHRoPSIyMDAiIGhlaWdodD0iNDAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIgc3R5bGU9ImZpbGw6IGxpZ2h0LWRhcmsoI2ZmZmZmZiwgdmFyKC0tZ2UtZGFyay1jb2xvciwgIzEyMTIxMikpOyBzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjwvZz48Zz48Zz48c3dpdGNoPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiByZXF1aXJlZEZlYXR1cmVzPSJodHRwOi8vd3d3LnczLm9yZy9UUi9TVkcxMS9mZWF0dXJlI0V4dGVuc2liaWxpdHkiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogdW5zYWZlIGZsZXgtZW5kOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxOThweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAyODdweDsgbWFyZ2luLWxlZnQ6IDU4MXB4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7IGNvbG9yOiAjMDAwMDAwOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbic7IGNvbG9yOiBsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXdyYXA6IG5vcm1hbDsgIj5DLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uPC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0Pjx0ZXh0IHg9IjY4MCIgeT0iMjg3IiBmaWxsPSJsaWdodC1kYXJrKCMwMDAwMDAsICNmZmZmZmYpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbiciIGZvbnQtc2l6ZT0iMTJweCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Qy4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uPC90ZXh0Pjwvc3dpdGNoPjwvZz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iVHF3ZWpjU3dzTlJVT1VfU3lRd08tOCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxwYXRoIGQ9Ik0gNDAwIDYwIEwgMTY2LjI4IDk4Ljk1IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIgc3R5bGU9InN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PHBhdGggZD0iTSAxNjEuMSA5OS44MiBMIDE2Ny40MyA5NS4yMSBMIDE2Ni4yOCA5OC45NSBMIDE2OC41OCAxMDIuMTIgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iVHF3ZWpjU3dzTlJVT1VfU3lRd08tOSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxwYXRoIGQ9Ik0gNDAwIDYwIEwgNDAwIDkzLjYzIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIgc3R5bGU9InN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PHBhdGggZD0iTSA0MDAgOTguODggTCAzOTYuNSA5MS44OCBMIDQwMCA5My42MyBMIDQwMy41IDkxLjg4IFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjwvZz48ZyBkYXRhLWNlbGwtaWQ9IlRxd2VqY1N3c05SVU9VX1N5UXdPLTEwIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHBhdGggZD0iTSA0MDAgNjAgTCA2MzMuNzIgOTguOTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIiBzdHlsZT0ic3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48cGF0aCBkPSJNIDYzOC45IDk5LjgyIEwgNjMxLjQyIDEwMi4xMiBMIDYzMy43MiA5OC45NSBMIDYzMi41NyA5NS4yMSBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIgc3R5bGU9ImZpbGw6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyBzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty0xMSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxwYXRoIGQ9Ik0gMTYwIDE0MCBMIDc1LjgyIDE3Ny40MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiIHN0eWxlPSJzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjxwYXRoIGQ9Ik0gNzEuMDIgMTc5LjU1IEwgNzYgMTczLjUgTCA3NS44MiAxNzcuNDEgTCA3OC44NCAxNzkuOSBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIgc3R5bGU9ImZpbGw6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyBzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty0xMiI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxwYXRoIGQ9Ik0gMTYwIDE0MCBMIDE3Ni41OCAyNTMuNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiIHN0eWxlPSJzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjxwYXRoIGQ9Ik0gMTc3LjM0IDI1OC44OSBMIDE3Mi44NyAyNTIuNDcgTCAxNzYuNTggMjUzLjcgTCAxNzkuNzkgMjUxLjQ2IFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIiBzdHlsZT0iZmlsbDogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7IHN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PC9nPjwvZz48ZyBkYXRhLWNlbGwtaWQ9IlRxd2VqY1N3c05SVU9VX1N5UXdPLTEzIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUsMC41KSI+PHBhdGggZD0iTSA0MDAgMTQwIEwgMjg0LjY5IDI0NS43IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIgc3R5bGU9InN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PHBhdGggZD0iTSAyODAuODIgMjQ5LjI0IEwgMjgzLjYyIDI0MS45MyBMIDI4NC42OSAyNDUuNyBMIDI4OC4zNSAyNDcuMDkgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iVHF3ZWpjU3dzTlJVT1VfU3lRd08tMTQiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwwLjUpIj48cGF0aCBkPSJNIDQwMCAxNDAgTCA0MDAgMjQzLjYzIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIgc3R5bGU9InN0cm9rZTogbGlnaHQtZGFyayhyZ2IoMCwgMCwgMCksIHJnYigyNTUsIDI1NSwgMjU1KSk7Ii8+PHBhdGggZD0iTSA0MDAgMjQ4Ljg4IEwgMzk2LjUgMjQxLjg4IEwgNDAwIDI0My42MyBMIDQwMy41IDI0MS44OCBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIgc3R5bGU9ImZpbGw6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyBzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty0xNSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxwYXRoIGQ9Ik0gNDAwIDE0MCBMIDQ5OS4zNSAzMTQuNDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIiBzdHlsZT0ic3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48cGF0aCBkPSJNIDUwMS45NSAzMTkuMDMgTCA0OTUuNDQgMzE0LjY4IEwgNDk5LjM1IDMxNC40NyBMIDUwMS41MiAzMTEuMjEgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PC9nPjxnIGRhdGEtY2VsbC1pZD0iVHF3ZWpjU3dzTlJVT1VfU3lRd08tMTYiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSwwLjUpIj48cGF0aCBkPSJNIDY0MCAxNDAgTCA1OTQuMSAxNzYuMDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIiBzdHlsZT0ic3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48cGF0aCBkPSJNIDU4OS45NyAxNzkuMzEgTCA1OTMuMzEgMTcyLjIzIEwgNTk0LjEgMTc2LjA3IEwgNTk3LjY0IDE3Ny43NCBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIgc3R5bGU9ImZpbGw6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyBzdHJva2U6IGxpZ2h0LWRhcmsocmdiKDAsIDAsIDApLCByZ2IoMjU1LCAyNTUsIDI1NSkpOyIvPjwvZz48L2c+PGcgZGF0YS1jZWxsLWlkPSJUcXdlamNTd3NOUlVPVV9TeVF3Ty0xNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41LDAuNSkiPjxwYXRoIGQ9Ik0gNjQwIDE0MCBMIDcwNy41NSAyNDQuNjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIiBzdHlsZT0ic3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48cGF0aCBkPSJNIDcxMC4zOSAyNDkuMDYgTCA3MDMuNjYgMjQ1LjA4IEwgNzA3LjU1IDI0NC42NSBMIDcwOS41NCAyNDEuMjggWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiIHN0eWxlPSJmaWxsOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsgc3Ryb2tlOiBsaWdodC1kYXJrKHJnYigwLCAwLCAwKSwgcmdiKDI1NSwgMjU1LCAyNTUpKTsiLz48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==",
+      "table": null,
+      "placeholder": "",
+      "lines": 0,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-e5ac690a-1233-43dc-b0d6-aa19e55cc217",
+      "answer": "A - Down sweep\nB - Inside pass\nC - Non-visual pass",
+      "markingInstructions": "Only give marks if these exact words are used."
+    },
+    {
+      "id": "short-answer-2f01db87-7ca3-4c2c-a400-7d5531731399",
+      "type": "short-answer",
+      "title": "State the steps for practicing the baton change.",
+      "points": 3,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 3,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-e5ac690a-1233-43dc-b0d6-aa19e55cc217",
+      "answer": "Get into groups of 4 and stand in lines keeping sufficient gaps between two students/runners. Pass the baton from the back to the front and practice this posing it in the same place second by walking, third by running slowly and then running fast.",
+      "markingInstructions": "Give marks for any similar answers."
+    },
+    {
+      "id": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "type": "big-question",
+      "title": "Write short answers.",
+      "points": 20,
+      "diagramDataUrl": null,
+      "table": null,
+      "description": ""
+    },
+    {
+      "id": "short-541eafa6-7bcd-452f-9525-2cbbe3bd5880",
+      "type": "short-answer",
+      "title": "State 3 child and maternal health programs that have been implanted to reduce malnutrition in childhood.",
+      "points": 3,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 3,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "markingInstructions": "Refer page 82 of the textbook.",
+      "answer": "1. Promotion of breastfeeding.\n2. Giving adequate nutrition to sick children\n3. Providing adequate and healthy supplementary food.\n4. Monitoring growth."
+    },
+    {
+      "id": "short-a8e69133-b1ee-4449-a487-fbfbf648dda2",
+      "type": "short-answer",
+      "title": "Who is an adolescent?",
+      "points": 1,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 1,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "A child who is in the age group of 10 to 19 years",
+      "markingInstructions": "Give marks for the age group."
+    },
+    {
+      "id": "short-7b5122e2-1454-4832-9a6e-b97df8087d22",
+      "type": "short-answer",
+      "title": "What changes take place during this period?",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "Accelerated growth in height and weight.",
+      "markingInstructions": "Accelerated : 1M\nHeight and Weight: 1M"
+    },
+    {
+      "id": "short-answer-8f85d367-a132-4f91-8a89-b037bf55ae51",
+      "type": "short-answer",
+      "title": "Write 4 factors that determine nutritional needs during this period?",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "Age\nGender \nHeight\nWeight\nLevel of Physical Activity",
+      "markingInstructions": "For any 3 correct answers give 2 marks"
+    },
+    {
+      "id": "short-answer-14d2fea1-b8a2-45f8-b80e-d8a4855089ff",
+      "type": "short-answer",
+      "title": "Name 2 extra amounts of nutritional requirements needed during this phase. ",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "Protein\nMineral Ions Fe, I2, Ca, \nVitamins\nFolic Acid",
+      "markingInstructions": "Give marks for any 2 answers."
+    },
+    {
+      "id": "short-answer-8df81a1f-b105-4da0-b5be-a7b91986a42b",
+      "type": "short-answer",
+      "title": "State 2 bad eating habits.",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "1. Missing breakfast\n2. Eating junk food and fast food\n3. Consuming sweet and fizzy drinks\n4. Consuming alcohol",
+      "markingInstructions": "Give marks for any 2 answers."
+    },
+    {
+      "id": "short-answer-40a32afd-b714-4c1e-8396-04582c64ab39",
+      "type": "short-answer",
+      "title": "State 3 consequences of bad food habits during this phase.",
+      "points": 3,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 3,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "1. Obesity\n2. Deficiency of Micronutrients\n3. More susceptible to develop non communicable diseases",
+      "markingInstructions": "Give marks for any 3 similar answers."
+    },
+    {
+      "id": "short-answer-37d90f22-a2b3-46ee-8734-2764487dbaba",
+      "type": "short-answer",
+      "title": "State 3 groups of people that need a special diet.",
+      "points": 3,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 3,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "1. Pregnant women\n2. Breastfeeding mothers\n3. Athletes\n4. People who engage in strenuous physical activity",
+      "markingInstructions": "Give marks for any 3 answers."
+    },
+    {
+      "id": "short-answer-51b33e35-ba14-4e98-950b-ecb26518ef9e",
+      "type": "short-answer",
+      "title": "Give 2 suggestions to increase the nutritional value of the meals for your family.",
+      "points": 2,
+      "diagramDataUrl": null,
+      "table": null,
+      "placeholder": "",
+      "lines": 2,
+      "answerFormat": "lines",
+      "answerTable": {
+        "headers": [
+          "Part",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "1",
+            ""
+          ],
+          [
+            "2",
+            ""
+          ],
+          [
+            "3",
+            ""
+          ]
+        ]
+      },
+      "parentId": "bigq-c341bc97-b64d-4223-b31d-6c893bfe99f1",
+      "answer": "",
+      "markingInstructions": "Give marks for any suitable answer."
+    }
+  ]
+}
